@@ -1,13 +1,17 @@
-import createButton from "../components/button";
+import createHeader from "../components/header";
 import render from "./dom";
 
+
+
 export default function appLayout() {
-  const btn1 = createButton("test1", () => {});
-  const btn2 = createButton("test2", () => {});
+  const header = createHeader([], "")
+
 
   const div = document.createElement("div");
-  div.className = "flex gap-6";
-  render([btn1, btn2], div);
+  div.className = "";
+
+
+  render([header], div,);
 
   return [div];
 }

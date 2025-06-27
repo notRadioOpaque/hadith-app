@@ -1,5 +1,5 @@
 import { createApp } from "./app";
-import "./style.css";
+import "./styles/style.css";
 
 const root = document.getElementById("app");
 
