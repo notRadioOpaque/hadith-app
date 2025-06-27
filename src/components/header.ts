@@ -3,7 +3,7 @@ export default function createHeader(
   className?: string
 ): HTMLElement {
   const header = document.createElement("header");
-  header.className = `flex justify-between  w-full px-4 py-2  bg-blue-600 text-white !${className}`;
+  header.className = `border border-white flex justify-between  w-full px-4 py-2  bg-blue-600 text-white hover:bg-blue-700 !${className}`;
 
   children.forEach((child) => {
     header.appendChild(child);
@@ -11,5 +11,3 @@ export default function createHeader(
 
   return header;
 }
-
-// factory fns ==> generate header html element
