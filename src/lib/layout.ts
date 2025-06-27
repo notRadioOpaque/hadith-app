@@ -8,6 +8,7 @@ export default function appLayout() {
 
 
   const div = document.createElement("div");
+  div.className = "";
 
 
   render([header], div,);
