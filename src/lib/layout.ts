@@ -9,6 +9,7 @@ export default function appLayout() {
   const header = createHeader([btn1, btn2], "");
 
   const div = document.createElement("div");
+  div.className = "";
 
   render([header], div);
 
