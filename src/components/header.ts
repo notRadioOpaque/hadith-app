@@ -1,7 +1,7 @@
 import createButton from "./button";
 import createLogo from "./logo";
 
-const ctaBtn = createButton("Subscribe", () => {});
+const ctaBtn = createButton({label: "Subscribe", onClick: () => {}});
 const logo = createLogo();
 
 export default function createHeader(): HTMLElement {
