@@ -1,7 +1,7 @@
-import render from "./dom";
-import createHeader from "../components/header";
-import createFooter from "../components/footer";
-import createMain from "../components/main";
+import render from "../lib/dom";
+import createHeader from "./header";
+import createFooter from "./footer";
+import createMain from "./main";
 
 const header = createHeader();
 const main = createMain();
