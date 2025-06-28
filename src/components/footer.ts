@@ -8,7 +8,7 @@ export default function createFooter() {
   const footerLeft = createrFooterLeft();
   const footerRight = createrFooterRight();
 
-  footer.className = "flex justify-between fixed bottom-4 right-0 left-0  w-full px-4 py-2  text-white ";
+  footer.className = "flex justify-between w-full mt-auto py-2 text-white";
 
   render([footerLeft, footerRight], footer);
 
@@ -45,11 +45,22 @@ function createrFooterLeft() {
 
 function createrFooterRight() {
   const footerRight = document.createElement("div");
-  const typescriptLink = createLink("https://www.typescriptlang.org", "Typescript", "_blank");
+  const typescriptLink = createLink(
+    "https://www.typescriptlang.org",
+    "Typescript",
+    "_blank"
+  );
   const nroGithubLink = createLink(nro.blog, nro.login, "_blank");
   const muakGithubLink = createLink(bigmuak.blog, bigmuak.login, "_blank");
 
-  footerRight.append("Built with vanilla ", typescriptLink, ", and maintained by ", nroGithubLink, " & ", muakGithubLink);
+  footerRight.append(
+    "Built with vanilla ",
+    typescriptLink,
+    ", and maintained by ",
+    nroGithubLink,
+    " & ",
+    muakGithubLink
+  );
   footerRight.className = "text-sm text-white/60";
 
   return footerRight;
