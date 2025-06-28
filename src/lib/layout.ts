@@ -2,18 +2,20 @@ import render from "./dom";
 import createHeader from "../components/header";
 import createFooter from "../components/footer";
 import createButton from "../components/button";
+import createMain from "../components/main";
 
-const btn1 = createButton("test", () => {});
-const btn2 = createButton("test2", () => {});
+
+const header = createHeader();
+const main = createMain();
 
 
 export default function appLayout() {
-  const header = createHeader([btn1, btn2], "");
-  const footer = createFooter()
-
+  
   const div = document.createElement("div");
+  div.className = "px-8 py-6 flex flex-col gap-6";
 
-  render([header,footer], div);
+
+  render([header, main], div);
 
   return [div];
 }

@@ -1,11 +1,15 @@
-export default function createHeader(
-  children: HTMLElement[],
-  className?: string
-): HTMLElement {
-  const header = document.createElement("header");
-  header.className = `border border-white flex justify-between fixed top-0 right-0 left-0  w-full px-4 py-2  bg-blue-600 text-white hover:bg-blue-700 !${className}`;
+import createButton from "./button";
+import createLogo from "./logo";
 
-  children.forEach((child) => {
+const ctaBtn = createButton("Subscribe", () => {});
+const logo = createLogo();
+
+export default function createHeader(): HTMLElement {
+  const header = document.createElement("header");
+
+  header.className = `border border-white/10 bg-white/10 backdrop-blur-xs flex justify-between rounded-lg w-full px-4 py-2 text-white`;
+
+  [logo, ctaBtn].forEach((child) => {
     header.appendChild(child);
   });
 
