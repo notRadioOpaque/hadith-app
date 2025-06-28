@@ -1,12 +1,13 @@
 import render from "./dom";
 import createHeader from "../components/header";
-import createFooter from "../components/footer";
-import createButton from "../components/button";
 import createMain from "../components/main";
+import createFooter from "../components/footer";
+
 
 
 const header = createHeader();
 const main = createMain();
+const footer = createFooter();
 
 
 export default function appLayout() {
@@ -15,7 +16,7 @@ export default function appLayout() {
   div.className = "px-8 py-6 flex flex-col gap-6";
 
 
-  render([header, main], div);
+  render([header, main, footer], div);
 
   return [div];
 }
