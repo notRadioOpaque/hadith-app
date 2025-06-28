@@ -8,7 +8,7 @@ type LinkProps = {
 export default function createLink({
   href,
   label,
-  target,
+  target = "_self",
   className,
 }: LinkProps) {
   const link = document.createElement("a");
