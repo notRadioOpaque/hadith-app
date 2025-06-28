@@ -45,22 +45,32 @@ function createrFooterLeft() {
 
 function createrFooterRight() {
   const footerRight = document.createElement("div");
-  const typescriptLink = createLink(
-    "https://www.typescriptlang.org",
-    "Typescript",
-    "_blank"
-  );
-  const nroGithubLink = createLink(nro.blog, nro.login, "_blank");
-  const muakGithubLink = createLink(bigmuak.blog, bigmuak.login, "_blank");
+
+  const typescriptLink = createLink({
+    href: "https://www.typescriptlang.org",
+    label: "Typescript",
+    target: "_blank",
+  });
+  const nroLink = createLink({
+    href: nro.blog,
+    label: nro.login,
+    target: "_blank",
+  });
+  const muakLink = createLink({
+    href: bigmuak.blog,
+    label: bigmuak.login,
+    target: "_blank",
+  });
 
   footerRight.append(
     "Built with vanilla ",
     typescriptLink,
     ", and maintained by ",
-    nroGithubLink,
+    nroLink,
     " & ",
-    muakGithubLink
+    muakLink
   );
+
   footerRight.className = "text-sm text-white/60";
 
   return footerRight;
