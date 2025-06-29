@@ -4,7 +4,7 @@ import createLogo from "./logo";
 const ctaBtn = createButton({label: "Subscribe", onClick: () => {}});
 const logo = createLogo();
 
-export default function createHeader(): HTMLElement {
+export default function  createHeader(): HTMLElement {
   const header = document.createElement("header");
 
   header.className = `border border-white/10 bg-white/10 backdrop-blur-xs flex justify-between rounded-lg w-full px-4 py-2 text-white`;

@@ -45,6 +45,12 @@ h1 {
   min-height: 100vh;
 }
 
+.lobster {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
