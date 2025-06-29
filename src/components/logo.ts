@@ -6,8 +6,6 @@ export default function createLogo() {
   const logoText = document.createElement("p");
   const logoImage = document.createElement("img");
 
-  render([logoImage, logoText], logo);
-
   logo.className = "flex items-center justify-center gap-2.5";
   logo.href = "/";
 
@@ -17,6 +15,8 @@ export default function createLogo() {
   logoImage.className = "block w-[40px] h-[40px]";
   logoText.className = "text-xl font-semibold w-[40px] leading-[0.9] text-center text-white";
   logoText.classList.add("lobster");
+
+  render([logoImage, logoText], logo);
 
   return logo;
 }
