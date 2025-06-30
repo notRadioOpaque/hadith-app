@@ -5,11 +5,10 @@ export default function createRHS() {
   const subHeroText = createSubHerotext();
   div.className = "border border-[#00a357] w-[55%]";
 
-  render([subHeroText], div)
+  render([subHeroText], div);
 
   return div;
 }
-
 
 function createSubHerotext() {
   const subHero = document.createElement("div");
@@ -18,12 +17,10 @@ function createSubHerotext() {
   const subHeroText2 = document.createElement("h3");
   const subHeroText3 = document.createElement("h3");
 
-  subHeroText1.textContent =
-    "Discover the timeless wisdom of the Prophet ﷺ, one hadith at a time.";
+  subHeroText1.textContent = "Discover the timeless wisdom of the Prophet ﷺ, one hadith at a time.";
   subHeroText2.textContent =
     "Whether you're starting your morning or seeking guidance at night, each hadith is a gentle reminder of faith, character, and purpose.";
-  subHeroText3.textContent =
-    "Stay connected. Stay inspired. One day, one hadith, every day.";
+  subHeroText3.textContent = "Stay connected. Stay inspired. One day, one hadith, every day.";
 
   subHero.className = "";
   subHeroText1.className = "";
