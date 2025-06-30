@@ -7,7 +7,7 @@ export default function createMain() {
   const mainLeftDiv = createLHS();
   const mainRightDiv = createRHS();
 
-  main.className = "flex gap-8";
+  main.className = "flex gap-8 flex-1";
 
   render([mainLeftDiv, mainRightDiv], main);
 

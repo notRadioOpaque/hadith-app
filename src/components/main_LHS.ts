@@ -3,7 +3,7 @@ import render from "../lib/dom";
 export default function createLHS() {
   const div = document.createElement("div");
   const heroText = createHeroText();
-  div.className = "border border-[#00a357] w-[45%]";
+  div.className = "border border-[#00a357] w-[45%] rounded-lg";
 
   render([heroText], div);
 
