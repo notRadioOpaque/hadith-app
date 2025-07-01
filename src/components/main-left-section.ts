@@ -4,7 +4,7 @@ import createHadithContent from "./hadith-content";
 
 export default function createLeftSection() {
   const left = document.createElement("section");
-  left.className = "w-[45%] flex flex-col border border-red-500 bg-white px-14 ml-20 text-gray-500";
+  left.className = "w-[45%] flex flex-col bg-white px-8 ml-20 text-gray-500";
 
   const hadithContent = createHadithContent();
   const leftBottomPanel = createLeftBottomPanel();

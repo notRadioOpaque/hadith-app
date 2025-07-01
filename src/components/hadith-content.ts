@@ -9,7 +9,7 @@ export default function createHadithContent() {
   const hadithContentBody = createHadithContentBody();
   const hadithContentFooter = createHadithContentFooter();
 
-  hadithContent.className = "w-full h-[90%] pt-20 pb-15 border flex flex-col justify-between gap-6";
+  hadithContent.className = "w-full h-[90%] pt-20 pb-15 flex flex-col justify-between gap-6";
 
   render([hadithContentHeader, hadithContentBody, hadithContentFooter], hadithContent);
 
