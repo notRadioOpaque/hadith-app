@@ -67,7 +67,28 @@ function createHadithContentBody() {
 
 function createHadithContentFooter() {
   const hadithContentFooter = document.createElement("div");
-  hadithContentFooter.className = "w-full h-[10%] bg-red-500";
+  hadithContentFooter.className = "w-full h-[10%] bg-red-500 flex items-center justify-between px-6";
+
+  const hadithContentFooterLeft = createHadithContentFooterLeft();
+  const hadithContentFooterRight = createHadithContentFooterRight();
+
+  render([hadithContentFooterLeft, hadithContentFooterRight], hadithContentFooter);
 
   return hadithContentFooter;
+}
+
+function createHadithContentFooterLeft() {
+  const hadithContentFooterLeft = document.createElement("div");
+  hadithContentFooterLeft.className = "w-full h-full bg-green-500 flex items-center justify-start";
+  hadithContentFooterLeft.textContent = "Footer Left";
+
+  return hadithContentFooterLeft;
+}
+
+function createHadithContentFooterRight() {
+  const hadithContentFooterRight = document.createElement("div");
+  hadithContentFooterRight.className = "w-full h-full bg-blue-500 flex items-center justify-end";
+  hadithContentFooterRight.textContent = "Footer Right";
+
+  return hadithContentFooterRight;
 }
