@@ -2,44 +2,44 @@ import render from "../lib/dom";
 
 export default function createHadithContentHeader() {
   const hadithContentHeader = document.createElement("div");
-  hadithContentHeader.className = "w-full bg-white";
+  hadithContentHeader.className = "w-full";
 
-  const hadithContentHeaderContent = createHadithContentHeaderContent();
+  const HeaderContent = headerContent();
 
-  render([hadithContentHeaderContent], hadithContentHeader);
+  render([HeaderContent], hadithContentHeader);
 
   return hadithContentHeader;
 }
 
-function createHadithContentHeaderContent() {
-  const hadithContentHeaderContent = document.createElement("div");
-  hadithContentHeaderContent.className = "w-full h-full flex items-center justify-between";
+function headerContent() {
+  const headerContent = document.createElement("div");
+  headerContent.className = "w-full h-full flex items-center justify-between";
 
-  const hadithContentHeaderContentLeft = createHadithContentHeaderContentLeft();
-  const hadithContentHeaderContentRight = createHadithContentHeaderContentRight();
+  const HeaderContentLeft = createHeaderContentLeft();
+  const HeaderContentRight = createHeaderContentRight();
 
-  render([hadithContentHeaderContentLeft, hadithContentHeaderContentRight], hadithContentHeaderContent);
+  render([HeaderContentLeft, HeaderContentRight], headerContent);
 
-  return hadithContentHeaderContent;
+  return headerContent;
 }
 
-function createHadithContentHeaderContentLeft() {
-  const hadithContentHeaderContentLeft = document.createElement("div");
-  hadithContentHeaderContentLeft.className = "w-[45%] h-full flex items-center justify-start text-left pb-2 text-2xl font-extrabold";
+function createHeaderContentLeft() {
+  const headerContentLeft = document.createElement("div");
+  headerContentLeft.className = "w-[45%] h-full flex items-center justify-start text-left pb-2 text-2xl font-extrabold";
   const contentText = document.createElement("p");
   contentText.className = "border-b-3 border-b-[#29a5d4]";
 
   contentText.textContent = "Sunan Ibn Majah";
 
-  hadithContentHeaderContentLeft.appendChild(contentText);
+  headerContentLeft.appendChild(contentText);
 
-  return hadithContentHeaderContentLeft;
+  return headerContentLeft;
 }
 
-function createHadithContentHeaderContentRight() {
-  const hadithContentHeaderContentRight = document.createElement("div");
-  hadithContentHeaderContentRight.className = "w-[45%] h-full flex text-left text-sm font-bold";
-  hadithContentHeaderContentRight.textContent = "Chapter 6: The chapters of the mosques and congregation";
+function createHeaderContentRight() {
+  const headerContentRight = document.createElement("div");
+  headerContentRight.className = "w-[45%] h-full flex text-left text-sm font-bold";
+  headerContentRight.textContent = "Chapter 6: The chapters of the mosques and congregation";
 
-  return hadithContentHeaderContentRight;
+  return headerContentRight;
 }
