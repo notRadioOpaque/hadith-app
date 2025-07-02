@@ -1,5 +1,6 @@
 import quran_icon from "./quran_icon.svg";
 import arrow_right from "./arrow_right.svg";
 import up_arrow from "./up_arrow.svg";
+import slider_right_arrow from "./slider_right_icon.svg";
 
-export { quran_icon, arrow_right, up_arrow };
+export { quran_icon, arrow_right, up_arrow, slider_right_arrow };
