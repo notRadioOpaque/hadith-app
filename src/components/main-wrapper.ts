@@ -7,7 +7,7 @@ export default function createMain() {
   const mainLeftDiv = createLeftSection();
   const mainRightDiv = createRightSection();
 
-  main.className = "flex flex-1";
+  main.className = "flex flex-1 bg-white";
 
   render([mainLeftDiv, mainRightDiv], main);
 
