@@ -1,15 +1,13 @@
 import render from "../lib/dom";
-import createLeftBottomPanel from "./left-bottom-panel";
 import createHadithContent from "./hadith-content";
 
 export default function createLeftSection() {
   const left = document.createElement("section");
-  left.className = "w-[45%] flex flex-col bg-white px-8 ml-20 text-gray-500";
+  left.className = "w-[40%] flex flex-col px-10 ml-20";
 
   const hadithContent = createHadithContent();
-  const leftBottomPanel = createLeftBottomPanel();
 
-  render([hadithContent, leftBottomPanel], left);
+  render([hadithContent], left);
 
   return left;
 }

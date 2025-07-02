@@ -9,7 +9,7 @@ export default function createMain() {
   const mainRightDiv = createRightSection();
   const leftSlider = createLeftSlider();
 
-  main.className = "flex flex-1 bg-white";
+  main.className = "flex flex-1 bg-[#242124] text-[#F0FFF0]";
 
   render([leftSlider, mainLeftDiv, mainRightDiv], main);
 
