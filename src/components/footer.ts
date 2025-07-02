@@ -5,8 +5,8 @@ const GITHUB_BASE_URL = "https://api.github.com/users";
 
 export default function createFooter() {
   const footer = document.createElement("footer");
-  const footerLeft = createrFooterLeft();
-  const footerRight = createrFooterRight();
+  const footerLeft = createFooterLeft();
+  const footerRight = createFooterRight();
 
   footer.className = "flex justify-between w-full mt-auto py-2 text-white";
 
@@ -33,7 +33,7 @@ const fetchGithubProfile = async (url: string) => {
 const bigmuak = await fetchGithubProfile(`${GITHUB_BASE_URL}/Abdulhakeem010`);
 const nro = await fetchGithubProfile(`${GITHUB_BASE_URL}/notradioopaque`);
 
-function createrFooterLeft() {
+function createFooterLeft() {
   const footerLeft = document.createElement("div");
   const date = new Date().getFullYear();
 
@@ -43,7 +43,7 @@ function createrFooterLeft() {
   return footerLeft;
 }
 
-function createrFooterRight() {
+function createFooterRight() {
   const footerRight = document.createElement("div");
 
   const typescriptLink = createLink({
@@ -68,7 +68,7 @@ function createrFooterRight() {
     ", and maintained by ",
     nroLink,
     " & ",
-    muakLink
+    muakLink,
   );
 
   footerRight.className = "text-sm text-white/60";
