@@ -46,12 +46,12 @@ function createContent() {
     "w-full flex flex-col items-center justify-center  gap-10 mt-15 border border-[#F0FFF0] p-10 rounded-lg";
 
   emailInput.className =
-    "w-full max-w-sm px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ";
+    "w-full max-w-sm px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ";
 
   subscribeBtn.className =
     "p-3 !w-[200px] !rounded-full hover:ring-[#F0FFF0] hover:ring-2 hover:ring-offset-3 hover:ring-offset-[#242124]  w-full !text-[#242124] !bg-[#F0FFF0] !font-bold !text-lg";
 
-  contentTitle.textContent = "Title";
+  contentTitle.textContent = "Title here";
   contentSubtitle.textContent = "Subtitle goes here";
   emailInput.type = "email";
   emailInput.name = "email";
