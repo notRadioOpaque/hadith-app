@@ -33,6 +33,11 @@ function createSubscribePanel() {
   subText.textContent = "No spam. Just one Hadith a day for free! 📬";
   subBtn.textContent = "Get Daily Hadith ";
 
+  subBtn.addEventListener("click", () => {
+    const modal = document.querySelector("#modal");
+    modal?.classList.remove("hide");
+  });
+
   subscribeWrapper.className = "w-full mt-10 flex flex-col items-center gap-6";
   subBtn.className =
     "!p-3 !w-[200px] !rounded-full hover:ring-[#F0FFF0] hover:ring-2 hover:ring-offset-3 hover:ring-offset-[#242124]  w-full !text-[#242124] !bg-[#F0FFF0] !font-bold !text-lg";
