@@ -110,8 +110,8 @@ button:focus-visible {
   transform: translateX(100%);
 }
 
-.hide {
-  display: none;
+.show {
+  display: flex;
 }
 
 @media (prefers-color-scheme: light) {

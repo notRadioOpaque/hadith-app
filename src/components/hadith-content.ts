@@ -35,7 +35,7 @@ function createSubscribePanel() {
 
   subBtn.addEventListener("click", () => {
     const modal = document.querySelector("#modal");
-    modal?.classList.remove("hide");
+    modal?.classList.add("show");
   });
 
   subscribeWrapper.className = "w-full mt-10 flex flex-col items-center gap-6";

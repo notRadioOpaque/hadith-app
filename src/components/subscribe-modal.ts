@@ -6,7 +6,7 @@ export default function createSubscribeModal() {
   const content = createContent();
 
   modalContainer.className =
-    "absolute w-full z-10 h-full flex items-center justify-center";
+    "absolute w-full z-10 h-full hidden flex items-center justify-center";
   modalContainer.id = "modal";
   // modalContainer.classList.add("hide");
 
@@ -19,7 +19,7 @@ function createUnderlay() {
   const underlay = document.createElement("div");
 
   underlay.addEventListener("click", () => {
-    underlay.parentElement?.classList.add("hide");
+    underlay.parentElement?.classList.remove("show");
   });
 
   underlay.className =
