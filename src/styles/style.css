@@ -110,6 +110,10 @@ button:focus-visible {
   transform: translateX(100%);
 }
 
+.show {
+  display: flex;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
