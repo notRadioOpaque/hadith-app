@@ -1,4 +1,5 @@
 import render from "../lib/dom";
+import createForm from "./form";
 
 export default function createSubscribeModal() {
   const modalContainer = document.createElement("div");
@@ -30,10 +31,18 @@ function createUnderlay() {
 
 function createContent() {
   const content = document.createElement("div");
+  const contentTitle = document.createElement("h2");
+  const contentSubtitle = document.createElement("p");
 
-  content.className = "w-[50%] h-[80%] bg-white rounded-lg";
 
-  render([], content);
+  content.className =
+    "w-[50%] h-[80%]  rounded-lg flex items-center justify-center  text-center flex-col bg-[#242124] p-20";
+  contentTitle.className = "font-bold text-4xl ";
+  contentSubtitle.className = "mt-6 font-semibold text-xl ";
+  contentTitle.textContent = "Title here";
+  contentSubtitle.textContent = "Subtitle goes here";
+
+  render([contentTitle, contentSubtitle, createForm()], content);
 
   return content;
 }
