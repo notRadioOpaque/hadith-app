@@ -1,5 +1,6 @@
 import render from "../../shared/lib/dom";
 import createForm from "./form";
+import closeBtn from "../assets/icons/close-icon.svg"
 
 export default function createSubscribeModal() {
   const modalContainer = document.createElement("div");
@@ -31,17 +32,44 @@ function createUnderlay() {
 
 function createContent() {
   const content = document.createElement("div");
+  const closeBtnDiv = document.createElement("div");
+  const textAndFormDiv = document.createElement("div");
+  const closeBtn = createCloseButton();
   const contentTitle = document.createElement("h2");
   const contentSubtitle = document.createElement("p");
+  const form = createForm();
 
   content.className =
-    "w-[50%] h-[80%]  rounded-lg flex items-center justify-center  text-center flex-col bg-[#242124] p-20";
+    "w-[50%] h-[80%] rounded-lg flex items-center text-center flex-col bg-[#242124] relative";
+  closeBtnDiv.className= "flex justify-end items-center absolute top-4 right-4";
+  textAndFormDiv.className = "w-full flex flex-col flex-grow items-center justify-center"
   contentTitle.className = "font-bold text-4xl ";
   contentSubtitle.className = "mt-6 font-semibold text-xl ";
   contentTitle.textContent = "Title here";
   contentSubtitle.textContent = "Subtitle goes here";
 
-  render([contentTitle, contentSubtitle, createForm()], content);
+  closeBtnDiv.appendChild(closeBtn);
+  [contentTitle, contentSubtitle, form].forEach((child) => {
+    textAndFormDiv.appendChild(child);
+  })
+
+  render([closeBtnDiv, textAndFormDiv], content);
 
   return content;
+}
+
+
+function createCloseButton() {
+  const closeButton = document.createElement("button");
+  const btnIcon = document.createElement("img");
+
+  btnIcon.src = closeBtn;
+  btnIcon.className = "w-[40px] h-[40px] block";
+
+  closeButton.className =
+    "flex !bg-transparent mt-0";
+
+  closeButton.appendChild(btnIcon);
+
+  return closeButton;
 }
