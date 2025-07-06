@@ -67,7 +67,11 @@ function createCloseButton() {
   btnIcon.className = "w-[40px] h-[40px] block";
 
   closeButton.className =
-    "flex !bg-transparent mt-0";
+    "flex !bg-transparent !px-2.5 gap-3";
+
+    closeButton.addEventListener("click", () => {
+      closeButton.closest(".show")?.classList.remove("show");
+    });
 
   closeButton.appendChild(btnIcon);
 
