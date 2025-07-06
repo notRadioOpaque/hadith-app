@@ -1,4 +1,4 @@
-import render from "../lib/dom";
+import render from "../../shared/lib/dom";
 import createLink from "./link";
 
 const GITHUB_BASE_URL = "https://api.github.com/users";

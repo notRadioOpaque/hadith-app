@@ -1,4 +1,4 @@
-import render from "../lib/dom";
+import render from "../../shared/lib/dom";
 import createHadithContentHeader from "./hadith-content-header";
 import createHadithContentBody from "./hadith-content-body";
 import createHadithContentFooter from "./hadith-content-footer";

@@ -1,4 +1,4 @@
-import render from "../lib/dom";
+import render from "../../shared/lib/dom";
 import createForm from "./form";
 
 export default function createSubscribeModal() {
@@ -33,7 +33,6 @@ function createContent() {
   const content = document.createElement("div");
   const contentTitle = document.createElement("h2");
   const contentSubtitle = document.createElement("p");
-
 
   content.className =
     "w-[50%] h-[80%]  rounded-lg flex items-center justify-center  text-center flex-col bg-[#242124] p-20";

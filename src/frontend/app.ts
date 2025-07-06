@@ -1,4 +1,4 @@
-import render from "./lib/dom";
+import render from "../shared/lib/dom";
 import appLayout from "./components/layout";
 
 export function createApp(root: HTMLElement) {

@@ -1,4 +1,4 @@
-import render from "../lib/dom";
+import render from "../../shared/lib/dom";
 import createHadithContent from "./hadith-content";
 
 export default function createLeftSection() {
