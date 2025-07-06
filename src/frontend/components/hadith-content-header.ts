@@ -1,4 +1,4 @@
-import render from "../lib/dom";
+import render from "../../shared/lib/dom";
 
 export default function createHadithContentHeader() {
   const hadithContentHeader = document.createElement("div");
@@ -25,7 +25,8 @@ function headerContent() {
 
 function createHeaderContentLeft() {
   const headerContentLeft = document.createElement("div");
-  headerContentLeft.className = "w-[45%] h-full flex items-center justify-start text-left pb-2 text-2xl font-extrabold";
+  headerContentLeft.className =
+    "w-[45%] h-full flex items-center justify-start text-left pb-2 text-2xl font-extrabold";
   const contentText = document.createElement("p");
   contentText.className = "border-b-3 border-b-[#29a5d4]";
 
@@ -38,8 +39,10 @@ function createHeaderContentLeft() {
 
 function createHeaderContentRight() {
   const headerContentRight = document.createElement("div");
-  headerContentRight.className = "w-[45%] h-full flex text-left text-sm font-bold";
-  headerContentRight.textContent = "Chapter 6: The chapters of the mosques and congregation";
+  headerContentRight.className =
+    "w-[45%] h-full flex text-left text-sm font-bold";
+  headerContentRight.textContent =
+    "Chapter 6: The chapters of the mosques and congregation";
 
   return headerContentRight;
 }

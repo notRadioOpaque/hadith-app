@@ -1,5 +1,5 @@
 import { quran_icon } from "../assets/icons";
-import render from "../lib/dom";
+import render from "../../shared/lib/dom";
 
 export default function createLogo() {
   const logo = document.createElement("a");
@@ -13,7 +13,8 @@ export default function createLogo() {
   logoText.textContent = "Hadith App";
 
   logoImage.className = "block w-[40px] h-[40px]";
-  logoText.className = "text-xl font-semibold w-[40px] leading-[0.9] text-center text-white";
+  logoText.className =
+    "text-xl font-semibold w-[40px] leading-[0.9] text-center text-white";
   logoText.classList.add("lobster");
 
   render([logoImage, logoText], logo);

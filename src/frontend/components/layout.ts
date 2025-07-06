@@ -1,4 +1,4 @@
-import render from "../lib/dom";
+import render from "../../shared/lib/dom";
 import createMain from "./main-wrapper";
 
 const main = createMain();
