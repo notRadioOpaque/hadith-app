@@ -1,5 +1,5 @@
 import { arrow_right, up_arrow } from "../assets/icons";
-import render from "../../shared/lib/dom";
+import render from "../lib/dom";
 
 export default function createRightBottomPanel() {
   const panel = document.createElement("div");

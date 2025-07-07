@@ -1,4 +1,4 @@
-import render from "../../shared/lib/dom";
+import render from "../lib/dom";
 import createForm from "./form";
 
 export default function createSubscribeModal() {

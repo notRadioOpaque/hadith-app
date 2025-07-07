@@ -1,4 +1,4 @@
-import render from "../../shared/lib/dom";
+import render from "../lib/dom";
 
 export default function createHadithContentHeader() {
   const hadithContentHeader = document.createElement("div");

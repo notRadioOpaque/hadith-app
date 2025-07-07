@@ -1,4 +1,4 @@
-import render from "../../shared/lib/dom";
+import render from "../lib/dom";
 
 export default function createBottomSlider() {
   const bottomSlider = document.createElement("div");

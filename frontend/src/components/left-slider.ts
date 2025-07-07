@@ -1,5 +1,5 @@
 import { slider_right_arrow } from "../assets/icons";
-import render from "../../shared/lib/dom";
+import render from "../lib/dom";
 
 export default function createLeftSlider() {
   const header = document.createElement("header");
