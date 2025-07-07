@@ -1,5 +1,5 @@
 import { quran_icon } from "../assets/icons";
-import render from "../../shared/lib/dom";
+import render from "../lib/dom";
 
 export default function createLogo() {
   const logo = document.createElement("a");

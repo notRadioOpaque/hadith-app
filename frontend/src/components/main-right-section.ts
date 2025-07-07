@@ -1,5 +1,5 @@
 import { image3 } from "../assets/images";
-import render from "../../shared/lib/dom";
+import render from "../lib/dom";
 import createRightBottomPanel from "./right-bottom-panel";
 
 export default function createRightSection() {

@@ -1,4 +1,4 @@
-import render from "../../shared/lib/dom";
+import render from "../lib/dom";
 import createLeftSlider from "./left-slider";
 import createLeftSection from "./main-left-section";
 import createRightSection from "./main-right-section";
