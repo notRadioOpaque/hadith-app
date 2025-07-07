@@ -1,7 +1,7 @@
-import { useSubscribe } from "../../shared/hooks/useSubscribe";
-import render from "../../shared/lib/dom";
-import { showToast } from "../../shared/lib/toast";
-import { isValidEmail } from "../../shared/lib/utils";
+import { useSubscribe } from "../hooks/useSubscribe";
+import render from "../lib/dom";
+import { showToast } from "../lib/toast";
+import { isValidEmail } from "../lib/utils";
 
 export default function createForm() {
   const form = document.createElement("form");
