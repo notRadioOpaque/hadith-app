@@ -44,6 +44,7 @@ function createContent() {
     "flex justify-end items-center absolute top-4 right-4";
   textAndFormDiv.className =
     "w-full flex flex-col flex-grow items-center justify-center";
+
   contentTitle.className = "font-bold text-4xl ";
   contentSubtitle.className = "mt-6 font-semibold text-xl ";
   contentTitle.textContent = "Get Daily Hadith in Your Inbox";
