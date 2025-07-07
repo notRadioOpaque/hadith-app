@@ -9,7 +9,6 @@ export default function createSubscribeModal() {
   modalContainer.className =
     "absolute w-full z-10 h-full hidden flex items-center justify-center";
   modalContainer.id = "modal";
-  // modalContainer.classList.add("hide");
 
   render([underlay, content], modalContainer);
 
@@ -35,11 +34,12 @@ function createContent() {
   const contentSubtitle = document.createElement("p");
 
   content.className =
-    "w-[50%] h-[80%]  rounded-lg flex items-center justify-center  text-center flex-col bg-[#242124] p-20";
+    "w-[50%] h-[60%]  rounded-lg flex items-center justify-center  text-center flex-col bg-[#242124] p-20";
   contentTitle.className = "font-bold text-4xl ";
   contentSubtitle.className = "mt-6 font-semibold text-xl ";
-  contentTitle.textContent = "Title here";
-  contentSubtitle.textContent = "Subtitle goes here";
+  contentTitle.textContent = "Get Daily Hadith in Your Inbox";
+  contentSubtitle.textContent =
+    "One authentic hadith every morning. No spam, just benefit.";
 
   render([contentTitle, contentSubtitle, createForm()], content);
 
