@@ -1,5 +1,6 @@
 import render from "../lib/dom";
 import createForm from "./form";
+import closeBtn from "../assets/icons/close-icon.svg";
 
 export default function createSubscribeModal() {
   const modalContainer = document.createElement("div");
@@ -30,18 +31,51 @@ function createUnderlay() {
 
 function createContent() {
   const content = document.createElement("div");
+  const closeBtnDiv = document.createElement("div");
+  const textAndFormDiv = document.createElement("div");
+  const closeBtn = createCloseButton();
   const contentTitle = document.createElement("h2");
   const contentSubtitle = document.createElement("p");
+  const form = createForm();
 
   content.className =
     "w-[50%] h-[60%]  rounded-lg flex items-center justify-center  text-center flex-col bg-[#242124] p-20";
+  closeBtnDiv.className =
+    "flex justify-end items-center absolute top-4 right-4";
+  textAndFormDiv.className =
+    "w-full flex flex-col flex-grow items-center justify-center";
+
   contentTitle.className = "font-bold text-4xl ";
   contentSubtitle.className = "mt-6 font-semibold text-xl ";
   contentTitle.textContent = "Get Daily Hadith in Your Inbox";
   contentSubtitle.textContent =
     "One authentic hadith every morning. No spam, just benefit.";
 
-  render([contentTitle, contentSubtitle, createForm()], content);
+  closeBtnDiv.appendChild(closeBtn);
+  [contentTitle, contentSubtitle, form].forEach((child) => {
+    textAndFormDiv.appendChild(child);
+  });
+
+  render([closeBtnDiv, textAndFormDiv], content);
 
   return content;
+}
+
+function createCloseButton() {
+  const closeButton = document.createElement("button");
+  const btnIcon = document.createElement("img");
+
+  btnIcon.src = closeBtn;
+  btnIcon.className = "w-[40px] h-[40px] block";
+
+  closeButton.className =
+    "flex !bg-transparent !border-none hover:!border-none mt-0";
+
+  closeButton.addEventListener("click", () => {
+    closeButton.closest(".show")?.classList.remove("show");
+  });
+
+  closeButton.appendChild(btnIcon);
+
+  return closeButton;
 }
