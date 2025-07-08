@@ -39,7 +39,7 @@ function createContent() {
   const form = createForm();
 
   content.className =
-    "w-[50%] h-[60%]  rounded-lg flex items-center justify-center  text-center flex-col bg-[#242124] p-20";
+    "w-[50%] h-[60%]  rounded-lg flex items-center justify-center  text-center flex-col bg-[#242124] p-20 absolute";
   closeBtnDiv.className =
     "flex justify-end items-center absolute top-4 right-4";
   textAndFormDiv.className =
@@ -69,7 +69,7 @@ function createCloseButton() {
   btnIcon.className = "w-[40px] h-[40px] block";
 
   closeButton.className =
-    "flex !bg-transparent !border-none hover:!border-none mt-0";
+    "flex !bg-transparent !border-none hover:!border-none mt-0 relative";
 
   closeButton.addEventListener("click", () => {
     closeButton.closest(".show")?.classList.remove("show");
@@ -79,3 +79,4 @@ function createCloseButton() {
 
   return closeButton;
 }
+
