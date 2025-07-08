@@ -17,25 +17,21 @@ export function useSubscribe() {
     state.success = false;
 
     try {
-      const res = await fetch("/subscribe", {
+      const res = await fetch("http://localhost:3000/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
       });
 
-      console.log(res, "res");
-
       if (!res.ok) {
-        state.error = res.statusText || "Failed to subscribe.";
-
-        return { ...state, loading: false };
+        throw new Error(res.statusText);
       }
 
-      // const data = await res.json();
-
       state.success = true;
-    } catch (err) {
-      state.error = (err as Error).message || "Unknown error";
+    } catch (err: any) {
+      state.error = err.message || "Failed to subscribe.";
+
+      return { ...state, loading: false };
     }
 
     state.loading = false;
