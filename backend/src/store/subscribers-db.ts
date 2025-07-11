@@ -1,12 +1,11 @@
 const Database = require("better-sqlite3");
-const fs = require("fs");
 const path = require("path");
 
 const dbPath = path.join(__dirname, "subscribers.db");
 
-const db = new Database(dbPath);
+const subscribersDB = new Database(dbPath);
 
-db.exec(`
+subscribersDB.exec(`
   CREATE TABLE IF NOT EXISTS subscribers (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     email TEXT UNIQUE NOT NULL,
@@ -14,4 +13,4 @@ db.exec(`
   )
 `);
 
-export default db;
+export default subscribersDB;

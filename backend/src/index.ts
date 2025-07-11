@@ -1,7 +1,8 @@
+import "./scheduler";
 import express from "express";
 
 const subscribeRoute = require("./routes/subscribe");
-const hadithRoute = require("./routes/hadith");
+const getDailyHadithRoute = require("./routes/get-daily-hadith");
 const cors = require("cors");
 
 const app = express();
@@ -17,7 +18,7 @@ app.use(
 
 app.use(express.json());
 app.use("/api", subscribeRoute);
-app.use("/api", hadithRoute);
+app.use("/api", getDailyHadithRoute);
 
 app.listen(PORT, () => {
   console.log(`🚀 Backend running at http://localhost:${PORT}`);
