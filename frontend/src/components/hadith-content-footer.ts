@@ -26,9 +26,9 @@ export default function createHadithContentFooter(hadith: Hadith) {
 
 function FooterLeft(attribution: string) {
   const hadithContentFooterLeft = document.createElement("div");
-  hadithContentFooterLeft.className = "flex flex-col justify-start text-left";
+  hadithContentFooterLeft.className = "w-1/3 flex flex-col justify-start text-left";
   const chain = document.createElement("p");
-  chain.textContent = attribution;
+  chain.innerHTML = attribution;
 
   hadithContentFooterLeft.appendChild(chain);
 
@@ -39,7 +39,7 @@ function FooterRight(grade: string) {
   const hadithContentFooterRight = document.createElement("div");
 
   hadithContentFooterRight.className = cn(
-    "rounded-full text-bold  px-6 py-2",
+    "w-1/3 rounded-full text-bold py-2 flex items-center justify-center",
     Grade.Authentic === grade && "text-black bg-green-500",
     grade === Grade.Good && "text-amber bg-brown",
     Grade.Weak === grade && "text-red bg-pink",
