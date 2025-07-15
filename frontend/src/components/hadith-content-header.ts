@@ -1,6 +1,7 @@
 import render from "../lib/dom";
+import type { Hadith } from "../types";
 
-export default function createHadithContentHeader() {
+export default function createHadithContentHeader(hadith: Hadith) {
   const hadithContentHeader = document.createElement("div");
   hadithContentHeader.className = "w-full";
 

@@ -1,4 +1,4 @@
-import db from "../src/store/db";
+import subscribersDB from "../src/store/subscribers-db";
 
-const rows = db.prepare("SELECT * FROM subscribers").all();
+const rows = subscribersDB.prepare("SELECT * FROM subscribers").all();
 console.table(rows);

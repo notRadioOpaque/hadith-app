@@ -1,4 +1,4 @@
-import db from "../store/db";
+import subscribersDB from "../store/subscribers-db";
 
 const express = require("express");
 const router = express.Router();
@@ -11,7 +11,9 @@ router.post("/subscribe", (req: any, res: any) => {
   }
 
   try {
-    db.prepare("INSERT INTO subscribers (email) VALUES (?)").run(email);
+    subscribersDB
+      .prepare("INSERT INTO subscribers (email) VALUES (?)")
+      .run(email);
     return res.status(200).json({ success: true });
   } catch (err: any) {
     if (err.code === "SQLITE_CONSTRAINT_UNIQUE") {
