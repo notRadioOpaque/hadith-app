@@ -1,15 +1,16 @@
+import { ids } from "../constants/IDs";
 import { Hadith } from "../constants/types";
 import { fetchSingleHadith } from "../utils/fetch-single-hadith";
-import { getRandomId } from "./get-random-id";
+import { getUniqueRandomId } from "./get-random-id";
 
 export async function fetchUntilSuccess(): Promise<Hadith> {
-  const tried = new Set<string>(); // unique value
-
   while (true) {
-    const id = getRandomId([]);
+    const id = getUniqueRandomId(ids);
 
-    if (tried.has(id)) continue;
-    tried.add(id);
+    if (!id) {
+      console.error("❌ No more unique IDs available.");
+      process.exit(1); // terminate cleanly
+    }
 
     try {
       const res = await fetchSingleHadith(id);
@@ -20,6 +21,8 @@ export async function fetchUntilSuccess(): Promise<Hadith> {
 
       return data;
     } catch (err: any) {
+      // Only catch fetch-level issues
+      console.error("🔁 Retrying due to fetch error:", err);
       continue;
     }
   }

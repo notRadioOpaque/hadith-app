@@ -7,7 +7,7 @@ hadithDB
   .prepare(
     `
   CREATE TABLE IF NOT EXISTS daily_hadith (
-    id TEXT PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     data TEXT NOT NULL,
     served_at TEXT DEFAULT CURRENT_DATE
   )

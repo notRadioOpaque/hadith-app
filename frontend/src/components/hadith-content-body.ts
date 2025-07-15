@@ -1,4 +1,6 @@
-export default function createHadithContentBody() {
+import type { Hadith } from "../types";
+
+export default function createHadithContentBody(hadith: Hadith) {
   const hadithContentBody = document.createElement("div");
   hadithContentBody.className =
     "w-full h-[80%] font-semibold text-[#29a5d4] text-center text-xl leading-8 tracking-wide justify-center items-center flex";
