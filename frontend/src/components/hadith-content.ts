@@ -5,106 +5,63 @@ import render from "../lib/dom";
 import type { Hadith } from "../types";
 
 const hadithSample: Hadith = {
-  id: "65084",
+  id: "6181",
   title:
-    "It is due upon every Muslim to bathe for one day every seven days, in which he should wash his head and body",
-  hadeeth:
-    'Abu Hurayrah (may Allah be pleased with him) reported: The Messenger of Allah (may Allah\'s peace and blessings be upon him) said: "It is due upon every Muslim to bathe for one day every seven days, in which he should wash his head and body."',
+    "When one-third of the night had passed, the Messenger of Allah (may Allah's peace and blessings be upon him) would get up and call out: O people, remember Allah",
+  hadeeth: `Ubayy ibn Ka‘b (may Allah be pleased with him) reported: When one-third of the night had passed, the Messenger of Allah (may Allah's peace and blessings be upon him) would get up and call out: 'O people, remember Allah. The Rājifah has come (the first blowing of the Horn which will shake the whole universe and thus cause all life to cease), followed by the Rādifah (the second blowing of the Horn which will restore life and thus mark the Resurrection Day). Death has approached with all that it comprises. Death has approached with all that it comprises." I said: "O Messenger of Allah, I frequently invoke Allah's peace and blessings upon you. How much of my supplication should I devote to you?" He said: "As much as you wish." I said: 'A quarter?' He said: "As much as you wish, and if it is more, then it will be better for you." I said: "Then, one half?" He said: "As much as you wish, and if it is more, then it will be better for you." I said: "Then, two- thirds?" He said: "As much as you wish, and if it is more, then it will be better for you." I said: "Shall I devote all my supplication to invoke Allah's peace and blessings upon you?" He said: "Then, you will be relieved of your worries and your sins will be forgiven."`,
   attribution: "Narrated by At-Termedhy - Narrated by Ahmad",
-  grade: "Authentic hadith",
-  explanation:
-    'The Messenger of Allah (may Allah\'s peace and blessings be upon him) informed that it is due upon every rational and mature Muslim to take a bath once a week, in which he washes his head and body, seeking purification and cleanliness. The worthiest among these days is Friday, as understood from some versions. For example, bathing on Friday before the prayer is highly recommended, even if one has taken one on Thursday. What indicates that the bath on Friday is not obligatory is the statement by \'Ā’ishah (may Allah be pleased with her): "The people used to work, and whenever they went for the Friday prayer, they would go in the same condition as they had been in work. So, it was said to them: \'If only you had taken a bath\'" [Narrated by Al-Bukhāri]. In another version by him: "They were smelling bad", i.e., the smell of sweat. Despite that, it was said to them: "If only you had taken a bath." so that others are more likely to do so.',
-  hints: [
-    "The Hadīth highlights Islam's interest and care about cleanliness and purification.\r",
-    "Bathing on Friday is strongly recommended for the prayer.\r",
-    "The head is singled out despite it being part of the body to give it more attention.\r",
-    "Bathing is expected of those who have a foul smell that annoys people.\r",
-    "Given its merit, Friday is the most recommended day for taking a bath.",
-  ],
-  categories: ["438", "447"],
+  grade: "Good hadith",
+  explanation: `It is mentioned in the beginning of the Hadīth that when the Prophet (may Allah's peace and blessings be upon him) got up after one third of the night had passed, he would say to his followers: "O people, mention Allah," to wake them up from the state of heedlessness, and to encourage them to do the things that will earn them Allah's pleasure and His complete mercy. He reminds them to mention Allah with their tongues and their hearts so that the fruits of Allah's remembrance would lead them to do more good deeds and shun bad deeds. The Hadīth also indicates that the person may have a supplication that he asks for himself, and he may make one third of his supplication for the Prophet by sending peace and blessings upon him. He may also dedicate half of his supplication to the Prophet or even all of it, by invoking Allah's peace and blessings upon him instead of supplicating for himself. It was stated in an authentic Hadīth reported by Abu Hurayrah (may Allah be pleased with him) that the Prophet (may Allah's peace and blessings be upon him) said: "Whoever sends Salāh upon me one time, then Allah will send Salāh upon him ten times." [Muslim 1/306, no. 408] The reward for his Salāh upon the Prophet is sufficient for him, and it is for this reason that he said: ''Then you will be relieved of your worries and your sins will be forgiven." In other words, when you supplicated for yourself, you asked for the removal of harm that causes worries and entails sin. If you send Salāh upon me instead of making this supplication for yourself, then you will be granted what you asked for. Another possible meaning of this Hadīth is dedicating part of his supplication to the Prophet, as if he meant that whenever he supplicated for himself, he invoked Allah's peace and blessings upon the Prophet, so both would go together in compliance with all texts.`,
+  hints: [],
+  categories: ["311"],
   translations: [
     "ar",
-    "en",
-    "my",
-    "sv",
-    "cs",
-    "gu",
-    "yo",
-    "nl",
-    "ur",
-    "id",
-    "ug",
     "bn",
-    "si",
-    "hi",
-    "vi",
-    "ha",
-    "te",
-    "sw",
-    "ps",
-    "as",
-    "prs",
-    "ky",
-    "lt",
-    "rw",
-    "ne",
-    "ml",
     "bs",
-    "kn",
-    "ku",
-    "ro",
-    "so",
-    "sq",
-    "sr",
-    "uk",
-    "wo",
-    "tl",
-    "mos",
-    "ta",
-    "az",
+    "en",
+    "es",
     "fa",
-    "ka",
-    "zh",
-    "hu",
-    "pt",
-    "de",
+    "fr",
+    "id",
     "ru",
-    "mk",
-    "bm",
-    "am",
-    "mg",
-    "om",
-    "km",
-    "th",
+    "tl",
+    "tr",
+    "ur",
+    "zh",
+    "hi",
+    "si",
+    "ku",
   ],
-  hadeeth_intro:
-    "Abu Hurayrah (may Allah be pleased with him) reported: The Messenger of Allah (may Allah's peace and blessings be upon him) said:",
   hadeeth_ar:
-    "عن أبي هريرة قال: قال رسول الله صلى الله عليه وسلم: «حَقٌّ عَلَى كُلِّ مُسْلِمٍ أَنْ يَغْتَسِلَ فِي كُلِّ سَبْعَةِ أَيَّامٍ يَوْمًا، يَغْسِلُ فِيهِ رَأْسَهُ وَجَسَدَهُ».",
-  hadeeth_intro_ar: "عن أبي هريرة قال: قال رسول الله صلى الله عليه وسلم:",
+    'عن أبي بن كعب رضي الله عنه : كان رسولُ اللهِ صلى الله عليه وسلم إذا ذَهَبَ ثُلثُ الليلِ قامَ، فقال: "يا أيها الناسُ، اذكروا اللهَ، جاءت الرَّاجِفَةُ، تَتْبَعُها الرَّادِفَةُ، جاءَ الموتُ بما فيه، جاءَ الموتُ بما فيه"، قلتُ: يا رسول الله، إني أُكْثِرُ الصلاةَ عليكَ، فكم أجعلُ لكَ من صلاتِي؟ فقالَ: "ما شِئتَ"، قلتُ: الرُّبُعَ؟، قالَ: "ما شئتَ، فإنْ زِدتَ فهو خيرٌ لكَ"، قلتُ: فالنّصفَ؟، قالَ: "ما شئتَ، فإن زِدتَ فهو خيرٌ لكَ"، قلتُ: فالثلثين؟ قالَ: "ما شئتَ، فإن زدتَ فهو خيرٌ لكَ"، قلتُ: أجعلُ لكَ صلاتِي كُلَّها؟ قالَ: "إذاً تُكْفى هَمَّكَ، ويُغْفَرَ لكَ ذَنبُكَ".',
   explanation_ar:
-    'أَخْبَرَ رسولُ الله صلى الله عليه وسلم: أنه حقٌّ متأكد على كل مسلم بالغ عاقل أنْ يغتسلَ في كل سبعة أيام من الأسبوع يومًا، فيغسل في هذا اليوم رأسَه وجسدَه، طلبًا للطهارة والنظافة، وأَولى هذه الأيام يومُ الجمعة، كما يُفهم من بعض الروايات، والاغتسال يوم الجمعة قبل الصلاة مستحب استحبابًا مؤكدًا، ولو كان اغتسل يوم الخميس مثلًا، والصارف عن الوجوب قول عائشة رضي الله عنها: "كان الناسُ مَهَنَةَ أنفسهم، وكانوا إذا راحوا إلى الجمعة راحوا في هيئتهم: فقيل لهم: لو اغتسلتم"، رواه البخاري، وفي رواية له: "لهم أرواح" أي رائحة العَرَقِ ونحوِه، ومع ذلك قيل لهم "لو اغتسلتم"، فغيرُهم من باب أولى.',
+    'ذكر في أول الحديث أن النبي –صلى الله عليه وسلم- كان إذا قام من ثلث الليل، قال منبهاً لأمته من الغفلة، محرضاً لها على ما يوصلها لمرضاة الله سبحانه من كمال رحمته "يا أيها الناس اذكروا اللّه"، أي: باللسان والجنان ليَحمِل ما يحصل من ثمرة الذكر على الإكثار من عمل البرّ وترك غيره.\n' +
+    'وفي الحديث أيضاً أن السائل قد يكون له دعاء يدعو به لنفسه، فيمكن أن يجعل ثُلثَه دعاءً للنبي -صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ- ، ويمكن أن يجعل له شَطْرَه، ويمكن أن يكون جميعُ دعائِه دعاءً للنبي، مثل أن يُصلِّي عليه بدلَ دعائه. وقد ثبتَ أنه: "من صلَّى عليه مرة صلَّى الله عليه عشراً" أخرجه مسلم من حديث أبي هريرة، فيكون أجر صلاته كافياً له، ولهذا قال: "يَكفِيْ همَّك ويَغفِر ذنبَك"، أي: إنك إنما تطلب زوالَ سبب الضرر الذي يُعقِب الهمَّ ويُوجب الذنب، فإذا صليتَ علي بدل دعائك حصل مقصودك، ويحتمل هذا الحديث أن المراد أن يشركه معه في الدعاء، فكأنه قال: كلما دعوت لنفسي صليت عليك، ولا يدل على الاكتفاء بالصلاة عن الدعاء، بل يجمع بينهما عملًا بجميع النصوص.',
   hints_ar: [
-    "اهتمام وعناية الإسلام بالنظافة والطهارة.",
-    "غسل الجمعة مستحب استحبابًا مُؤكدًا للصلاة.",
-    "ذِكْر الرَّأس وإن كان ذِكْر الجسد يشمله؛ للاهتمام به.",
-    "ﻳﺠﺐ ﺍﻟﻐﺴﻞ ﻋﻠﻰ ﻛﻞ ﻣﻦ ﻭُﺟِﺪﺕْ ﺑﻪ ﺭﺍﺋﺤﺔٌ ﻛﺮﻳﻬﺔٌ ﻳﺘﺄﺫﻯ ﺑﻬﺎ ﺍﻟﻨﺎس.",
-    "آكَدُ يومٍ للاغتسال يوم الجمعة؛ لفضله.",
+    "أفضل القيام ما كان في ثلث الليل الأخير.",
+    "فضل الصلاة على النبي –صلى الله عليه وسلم-.",
+    "جواز ذكر الإنسان صالح عمله إذا أمن من العُجب؛ لغرض كالاستفتاء.",
+    "قرب الموت من العباد، ولكن أكثر الناس غافلون عنه.",
   ],
-  words_meanings_ar: [],
-  attribution_ar: "متفق عليه",
-  grade_ar: "صحيح",
+  words_meanings_ar: [
+    { word: "الراجفة", meaning: " النفخة الأولى." },
+    { word: "الرادفة", meaning: " النفخة الثانية." },
+    { word: "من صلاتي", meaning: " من دعائي." },
+    { word: "تكفى همك", meaning: " المتعلق بالدارين." },
+  ],
+  attribution_ar: "رواه الترمذي وأحمد",
+  grade_ar: "حسن",
 };
 
 export default function createHadithContent() {
   const hadithContent = document.createElement("div");
-  const hadithContentHeader = createHadithContentHeader(hadithSample);
+  const hadithContentHeader = createHadithContentHeader();
   const hadithContentBody = createHadithContentBody(hadithSample);
   const hadithContentFooter = createHadithContentFooter(hadithSample);
   const subscribeCard = createSubscribePanel();
 
   hadithContent.className =
-    "w-full h-full pt-20  pb-12 flex flex-col justify-between gap-6";
+    "w-full h-full pt-8  pb-12 flex flex-col justify-between gap-6";
 
   render(
     [

@@ -4,7 +4,7 @@ import createRightBottomPanel from "./right-bottom-panel";
 
 export default function createRightSection() {
   const right = document.createElement("section");
-  right.className = "w-[60%] flex flex-col";
+  right.className = "w-[50%] flex flex-col";
 
   const imageRenderer = createImageRender();
   const bottomPanel = createRightBottomPanel();
