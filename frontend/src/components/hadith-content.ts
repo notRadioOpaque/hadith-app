@@ -4,7 +4,7 @@ import createHadithContentFooter from "./hadith-content-footer";
 import render from "../lib/dom";
 import type { Hadith } from "../types";
 
-const hadithSample: Hadith = {
+export const hadithSample: Hadith = {
   id: "6181",
   title:
     "When one-third of the night had passed, the Messenger of Allah (may Allah's peace and blessings be upon him) would get up and call out: O people, remember Allah",

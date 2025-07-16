@@ -12,7 +12,7 @@ export default function createLeftSlider() {
   header.appendChild(sliderContainer);
 
   sliderContainer.className =
-    "relative w-full bg-[#242124] h-full  shadow shadow-[#F0FFF0]/10 shadow-l-sm";
+    "w-full bg-[#242124] h-full  shadow shadow-[#F0FFF0]/10 shadow-l-sm absolute z-20";
 
   render([slideBtn], sliderContainer);
 

@@ -11,12 +11,12 @@ export default function createHadithContentBody(hadith: Hadith) {
   const seeMoreBtn = document.createElement("button");
 
   seeMoreBtn.className =
-    "absolute bottom-0 !px-0 mb-2 hover:border-b-transparent border-b text-base !py-[2px]";
+    " bottom-0 !px-0 mb-2 hover:border-b-transparent border-b text-base !py-[2px]";
   seeMoreBtn.textContent = "Read more";
   seeMoreBtn.addEventListener("click", seeMore);
 
   hadithContentBody.className =
-    "w-full h-[80%] font-semibold relative text-white text-center text-xl leading-8 tracking-wide justify-center items-center flex flex-col overflow-hidden";
+    "w-full h-[80%] font-semibold  text-white text-center text-xl leading-8 tracking-wide justify-center items-center flex flex-col overflow-hidden border";
 
     const isTruncated = hadith.hadeeth.length > 700;
     hadithContentBody.textContent = isTruncated
