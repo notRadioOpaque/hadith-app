@@ -4,7 +4,7 @@ import render from "../lib/dom";
 export default function createLeftSlider() {
   const header = document.createElement("header");
   header.className =
-    "w-[43.5%] translate-x-[-88%] h-full transition ease-in-out absolute";
+    "w-[52.9%] translate-x-[-88%] h-full transition ease-in-out absolute";
 
   const sliderContainer = document.createElement("div");
   const slideBtn = createSliderBtn(header);
