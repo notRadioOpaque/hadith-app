@@ -6,18 +6,20 @@ export default function createContentModalRight() {
   const hintDiv = createHint("");
   const btnDiv = displayCtaBtns();
 
-  right.className = "border w-[44%] border-green-500 h-full gap-10";
+  right.className = "w-[44%] h-full gap-8 flex flex-col";
 
   render([hintDiv, btnDiv], right);
 
   return right;
 }
 
+
+
 function createHint(hints: any) {
   const div = document.createElement("div");
   const text = document.createElement("p");
 
-  div.className = "border w-full h-[65%]";
+  div.className = "border w-full h-[65%] rounded-lg";
   text.innerHTML = hints;
 
   div.appendChild(text);
@@ -32,7 +34,7 @@ function displayCtaBtns() {
   const btn2 = createBtn2();
   const btn3 = createBtn3();
 
-  btnDiv.className = "border w-full h-[35%] flex flex-col items-center justify-center gap-8 p-10";
+  btnDiv.className = "border w-full h-[35%] flex flex-col items-center justify-center gap-8 p-10 rounded-lg";
 
   render([btn1,btn2,btn3], btnDiv);
 

@@ -3,11 +3,11 @@ import render from "../lib/dom";
 import createLogo from "./logo";
 
 export default function createContentModalHeader() {
-  const header = document.createElement("header");
+  const header = document.createElement("div");
   const backBtn = createCloseButton();
   const logo = createLogo();
 
-  header.className = "w-full h-[7%] border flex items-center"
+  header.className = "w-full h-[60px] flex items-center mb-2"
 
   render([backBtn,logo], header);
 

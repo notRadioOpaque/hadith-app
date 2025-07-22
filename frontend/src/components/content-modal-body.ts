@@ -3,11 +3,11 @@ import createContentModalLeft from "./content-modal-left";
 import createContentModalRight from "./content-modal-right";
 
 export default function createContentModalBody () {
-  const body = document.createElement("body");
+  const body = document.createElement("div");
   const left = createContentModalLeft();
   const right = createContentModalRight();
 
-  body.className = "border w-full h-[93%] border-blue-500";
+  body.className = "w-full flex flex-1 gap-4";
 
   render([left,right], body);
 
