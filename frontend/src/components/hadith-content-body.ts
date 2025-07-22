@@ -18,12 +18,11 @@ export default function createHadithContentBody(hadith: Hadith) {
   hadithContentBody.className =
     "w-full h-[80%] font-semibold  text-white text-center text-xl leading-8 tracking-wide justify-center items-center flex flex-col overflow-hidden";
 
-    const isTruncated = hadith.hadeeth.length > 700;
-    hadithContentBody.textContent = isTruncated
-      ? hadith.hadeeth.slice(0, 700).trim() + "...."
-      : hadith.hadeeth;
+  const isTruncated = hadith.hadeeth.length > 700;
+  hadithContentBody.textContent = isTruncated
+    ? hadith.hadeeth.slice(0, 700).trim() + "...."
+    : hadith.hadeeth;
 
- 
   hadithContentBody.appendChild(seeMoreBtn);
 
   return hadithContentBody;
