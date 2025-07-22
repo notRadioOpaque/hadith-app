@@ -25,7 +25,7 @@ function createCloseButton() {
   btnIcon.className = "w-[35px] h-[35px] block";
 
   closeButton.className =
-    "flex !bg-transparent !border-none hover:!border-none mt-0 relative cursor-pointer";
+    "flex !bg-transparent !border-none hover:!border-none mt-0 relative cursor-pointer transform  transition hover:-translate-x-2.5";
 
   closeButton.addEventListener("click", () => {
     closeButton.closest(".show")?.classList.remove("show");
