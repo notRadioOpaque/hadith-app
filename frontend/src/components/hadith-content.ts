@@ -90,7 +90,7 @@ function createSubscribePanel() {
 
   subscribeWrapper.className = "w-full mt-10 flex flex-col items-center gap-6";
   subBtn.className =
-    "!p-3 !w-[200px] !rounded-full hover:ring-[#F0FFF0] hover:ring-2 hover:ring-offset-3 hover:ring-offset-[#242124]  w-full !text-[#242124] !bg-[#F0FFF0] !font-bold !text-lg";
+    "!p-3 !w-[200px] !rounded-full hover:ring-[#F0FFF0] hover:ring-2 hover:ring-offset-3 hover:ring-offset-[#242124]  w-full !text-[#242124] !bg-[#F0FFF0] !font-bold !text-lg cursor-pointer";
   subText.className = "text-sm text-[#29a5d4] font-semibold italic text-center";
 
   render([subBtn, subText], subscribeWrapper);
