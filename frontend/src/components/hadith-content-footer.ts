@@ -40,9 +40,9 @@ function FooterRight(grade: string) {
 
   hadithContentFooterRight.className = cn(
     "w-1/3 rounded-full text-bold py-2 flex items-center justify-center",
-    Grade.Authentic === grade && "text-black bg-green-500",
-    grade === Grade.Good && "text-amber bg-brown",
-    Grade.Weak === grade && "text-red bg-pink",
+    Grade.Authentic === grade && "text-[#065F46] bg-[#D1FAE5]",
+    Grade.Good === grade && "text-[#92400E] bg-[#FEF3C7]",
+    Grade.Weak === grade && "text-[#991B1B] bg-[#FECACA]",
   );
 
   hadithContentFooterRight.textContent = grade;

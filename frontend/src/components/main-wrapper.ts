@@ -13,7 +13,7 @@ export default function createMain() {
   const subscribeModal = createSubscribeModal();
   const contentModal = createHadithContentModal();
 
-  main.className = "flex flex-1 bg-[#242124] text-[#F0FFF0]";
+  main.className = "flex flex-1 bg-[#242124] text-[#F0FFF0] relative z-10";
 
   render(
     [leftSlider, mainLeftDiv, mainRightDiv, subscribeModal, contentModal],
