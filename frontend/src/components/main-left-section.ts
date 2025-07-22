@@ -3,7 +3,7 @@ import createHadithContent from "./hadith-content";
 
 export default function createLeftSection() {
   const left = document.createElement("section");
-  left.className = "w-[50%] flex flex-col px-10 ml-20";
+  left.className = "w-[50%] flex flex-col px-12";
 
   const hadithContent = createHadithContent();
 
