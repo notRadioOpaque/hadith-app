@@ -1,9 +1,9 @@
-// import { arrow_left } from "../assets/icons";
 import render from "../lib/dom";
 import createContentModalBody from "./content-modal-body";
 // import type { Hadith } from "../types";
 import createContentModalHeader from "./content-modal-header";
-// import { hadithSample } from "./hadith-content";
+import { hadithSample } from "./hadith-content";
+
 
 
 
@@ -11,7 +11,7 @@ export default function createHadithContentModal() {
   const modalContainer = document.createElement("div");
 // const content = createContent(hadithSample);
   const header = createContentModalHeader();
-  const body = createContentModalBody();
+  const body = createContentModalBody(hadithSample);
 
   modalContainer.className =
     "fixed w-full z-10 h-screen hidden bg-[#242124] flex flex-col border px-6 pb-6";
@@ -117,28 +117,6 @@ export default function createHadithContentModal() {
 //   return div;
 // }
 
-
-
-
-
-// function createCloseButton() {
-//   const closeButton = document.createElement("button");
-//   const btnIcon = document.createElement("img");
-
-//   btnIcon.src = arrow_left;
-//   btnIcon.className = "w-[35px] h-[35px] block";
-
-//   closeButton.className =
-//     "flex !bg-transparent !border-none hover:!border-none mt-0 relative cursor-pointer";
-
-//   closeButton.addEventListener("click", () => {
-//     closeButton.closest(".show")?.classList.remove("show");
-//   });
-
-//   closeButton.appendChild(btnIcon);
-
-//   return closeButton;
-// }
 
 
 

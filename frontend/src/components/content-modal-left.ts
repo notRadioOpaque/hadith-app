@@ -1,9 +1,12 @@
 import render from "../lib/dom";
+import type { Hadith } from "../types";
 
-export default function createContentModalLeft() {
+
+export default function createContentModalLeft(hadeeth: Hadith, explanation: Hadith) {
   const left = document.createElement("div");
-  const hadithDiv = createHadith("");
-  const explanationDiv = createExplanation("");
+
+  const hadithDiv = createHadith(hadeeth);
+  const explanationDiv = createExplanation(explanation);
 
   left.className = "flex flex-col w-[56%] border-red-500 h-full gap-8";
 
@@ -16,7 +19,7 @@ export default function createContentModalLeft() {
 
 
 
-function createHadith(hadeeth: string) {
+function createHadith(hadeeth: any) {
   const div = document.createElement("div");
   const text = document.createElement("p");
   
@@ -29,7 +32,7 @@ function createHadith(hadeeth: string) {
 }
 
 
-function createExplanation(explanation: string) {
+function createExplanation(explanation: any) {
   const div = document.createElement("div");
   const text = document.createElement("p");
  

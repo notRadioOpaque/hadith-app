@@ -1,9 +1,10 @@
 import render from "../lib/dom";
 
-export default function createContentModalRight() {
+
+export default function createContentModalRight(hints: any) {
   const right = document.createElement("div");
 
-  const hintDiv = createHint("");
+  const hintDiv = createHint(hints);
   const btnDiv = displayCtaBtns();
 
   right.className = "w-[44%] h-full gap-8 flex flex-col";
