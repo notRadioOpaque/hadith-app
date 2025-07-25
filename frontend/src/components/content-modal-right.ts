@@ -20,7 +20,7 @@ function createHint(hints: any) {
   const div = document.createElement("div");
   const text = document.createElement("p");
 
-  div.className = "border w-full h-[65%] rounded-lg";
+  div.className = "border w-full h-[65%] rounded-lg overflow-auto";
   text.innerHTML = hints;
 
   div.appendChild(text);

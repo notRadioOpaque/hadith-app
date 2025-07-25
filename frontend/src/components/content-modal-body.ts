@@ -16,7 +16,7 @@ export default function createContentModalBody (hadith: any) {
   const right = createContentModalRight(hints);
 
 
-  body.className = "w-full flex flex-1 gap-4";
+  body.className = "w-full flex flex-1 relative gap-4 border border-red-500";
 
   render([left,right], body);
 
