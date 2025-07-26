@@ -5,18 +5,23 @@ import render from "../lib/dom";
 import type { Hadith } from "../types";
 
 export const hadithSample: Hadith = {
-  id: "6181",
-  title:
-    "When one-third of the night had passed, the Messenger of Allah (may Allah's peace and blessings be upon him) would get up and call out: O people, remember Allah",
-  hadeeth: `Ubayy ibn Ka‘b (may Allah be pleased with him) reported: When one-third of the night had passed, the Messenger of Allah (may Allah's peace and blessings be upon him) would get up and call out: 'O people, remember Allah. The Rājifah has come (the first blowing of the Horn which will shake the whole universe and thus cause all life to cease), followed by the Rādifah (the second blowing of the Horn which will restore life and thus mark the Resurrection Day). Death has approached with all that it comprises. Death has approached with all that it comprises." I said: "O Messenger of Allah, I frequently invoke Allah's peace and blessings upon you. How much of my supplication should I devote to you?" He said: "As much as you wish." I said: 'A quarter?' He said: "As much as you wish, and if it is more, then it will be better for you." I said: "Then, one half?" He said: "As much as you wish, and if it is more, then it will be better for you." I said: "Then, two- thirds?" He said: "As much as you wish, and if it is more, then it will be better for you." I said: "Shall I devote all my supplication to invoke Allah's peace and blessings upon you?" He said: "Then, you will be relieved of your worries and your sins will be forgiven."`,
-  attribution: "Narrated by At-Termedhy - Narrated by Ahmad",
-  grade: "Good hadith",
-  explanation: `It is mentioned in the beginning of the Hadīth that when the Prophet (may Allah's peace and blessings be upon him) got up after one third of the night had passed, he would say to his followers: "O people, mention Allah," to wake them up from the state of heedlessness, and to encourage them to do the things that will earn them Allah's pleasure and His complete mercy. He reminds them to mention Allah with their tongues and their hearts so that the fruits of Allah's remembrance would lead them to do more good deeds and shun bad deeds. The Hadīth also indicates that the person may have a supplication that he asks for himself, and he may make one third of his supplication for the Prophet by sending peace and blessings upon him. He may also dedicate half of his supplication to the Prophet or even all of it, by invoking Allah's peace and blessings upon him instead of supplicating for himself. It was stated in an authentic Hadīth reported by Abu Hurayrah (may Allah be pleased with him) that the Prophet (may Allah's peace and blessings be upon him) said: "Whoever sends Salāh upon me one time, then Allah will send Salāh upon him ten times." [Muslim 1/306, no. 408] The reward for his Salāh upon the Prophet is sufficient for him, and it is for this reason that he said: ''Then you will be relieved of your worries and your sins will be forgiven." In other words, when you supplicated for yourself, you asked for the removal of harm that causes worries and entails sin. If you send Salāh upon me instead of making this supplication for yourself, then you will be granted what you asked for. Another possible meaning of this Hadīth is dedicating part of his supplication to the Prophet, as if he meant that whenever he supplicated for himself, he invoked Allah's peace and blessings upon the Prophet, so both would go together in compliance with all texts.`,
-  hints: ["test"],
-  categories: ["311"],
-  translations: [
+"id": "2941",
+  "title": "\"Shall I inform you of the gravest of the major sins?*\" He repeated this three times. They said: \"Yes, O Messenger of Allah.\" He said: \"Associating partners with Allah and undutifulness to parents.\" He was reclining and then sat up and said: \"And indeed, the false statement.\" He repeated it so many times that we wished he would stop.",
+  "hadeeth": "Abu Bakrah (may Allah be pleased with him) reported: The Prophet (may Allah's peace and blessings be upon him) said: \"Shall I inform you of the gravest of the major sins?\" He repeated this three times. They said: \"Yes, O Messenger of Allah.\" He said: \"Associating partners with Allah and undutifulness to parents.\" He was reclining and then sat up and said: \"And indeed, the false statement.\" He repeated it so many times that we wished he would stop.",
+  "attribution": "Narrated by Bukhari & Muslim",
+  "grade": "Authentic hadith",
+  "explanation": "The Prophet (may Allah's peace and blessings be upon him) informed his Companions about the gravest of the major sins and mentioned these three:\r\n\r\n1. Associating partners with Allah: This is to devote any form of worship to other than Allah and regard anyone as equal to Allah in His divinity, lordship, names, and attributes.\r\n\r\n2. Undutifulness to parents: This is any hurt to one's parents, whether by word or deed, and not showing kindness to them.\r\n\r\n3. False statement, which includes perjury: Every false and untrue statement intended to detract from the one about whom it is made by taking his property, damaging his honor, and the like.\r\n\r\nThe Prophet (may Allah's peace and blessings be upon him) repeated the warning about the false testimony to highlight its hideousness and evil consequences for society, so much that the Companions wished that he would be quiet out of compassion towards him and disliking what would annoy him.",
+  "hints": [
+    "The gravest sin is associating partners with Allah, as he puts it at the forefront of the major sins and the greatest one among them. This is confirmed by the verse: {Allah does not forgive associating partners with Him, but forgives anything less than that for whom He wills. Whoever associates partners with Allah has indeed committed a grave sin.}\r",
+    "The rights of parents are significant, as he coupled them with the rights of Allah Almighty.\r",
+    "Sins are divided into major and minor. Major sins are every sin that entails a worldly penalty, like the prescribed punishments and curses, or a threat regarding the Hereafter, such as the threat of entering Hellfire. There are different levels of major sins, some of which are more severe than others in terms of prohibition. Minor sins are the sins other than the major ones."
+  ],
+  "categories": [
+    "283",
+    "318"
+  ],
+  "translations": [
     "ar",
-    "bn",
     "bs",
     "en",
     "es",
@@ -24,33 +29,75 @@ export const hadithSample: Hadith = {
     "fr",
     "id",
     "ru",
-    "tl",
     "tr",
     "ur",
     "zh",
     "hi",
-    "si",
+    "bn",
     "ku",
+    "ha",
+    "pt",
+    "ml",
+    "te",
+    "sw",
+    "ta",
+    "si",
+    "my",
+    "de",
+    "ja",
+    "ps",
+    "vi",
+    "as",
+    "sq",
+    "sv",
+    "cs",
+    "gu",
+    "yo",
+    "nl",
+    "ug",
+    "prs",
+    "ky",
+    "lt",
+    "rw",
+    "ne",
+    "kn",
+    "ro",
+    "wo",
+    "so",
+    "sr",
+    "mos",
+    "uk",
+    "bg",
+    "tl",
+    "az",
+    "ka",
+    "hu",
+    "mk",
+    "bm",
+    "am",
+    "it",
+    "mg",
+    "om",
+    "km",
+    "th"
   ],
-  hadeeth_ar:
-    'عن أبي بن كعب رضي الله عنه : كان رسولُ اللهِ صلى الله عليه وسلم إذا ذَهَبَ ثُلثُ الليلِ قامَ، فقال: "يا أيها الناسُ، اذكروا اللهَ، جاءت الرَّاجِفَةُ، تَتْبَعُها الرَّادِفَةُ، جاءَ الموتُ بما فيه، جاءَ الموتُ بما فيه"، قلتُ: يا رسول الله، إني أُكْثِرُ الصلاةَ عليكَ، فكم أجعلُ لكَ من صلاتِي؟ فقالَ: "ما شِئتَ"، قلتُ: الرُّبُعَ؟، قالَ: "ما شئتَ، فإنْ زِدتَ فهو خيرٌ لكَ"، قلتُ: فالنّصفَ؟، قالَ: "ما شئتَ، فإن زِدتَ فهو خيرٌ لكَ"، قلتُ: فالثلثين؟ قالَ: "ما شئتَ، فإن زدتَ فهو خيرٌ لكَ"، قلتُ: أجعلُ لكَ صلاتِي كُلَّها؟ قالَ: "إذاً تُكْفى هَمَّكَ، ويُغْفَرَ لكَ ذَنبُكَ".',
-  explanation_ar:
-    'ذكر في أول الحديث أن النبي –صلى الله عليه وسلم- كان إذا قام من ثلث الليل، قال منبهاً لأمته من الغفلة، محرضاً لها على ما يوصلها لمرضاة الله سبحانه من كمال رحمته "يا أيها الناس اذكروا اللّه"، أي: باللسان والجنان ليَحمِل ما يحصل من ثمرة الذكر على الإكثار من عمل البرّ وترك غيره.\n' +
-    'وفي الحديث أيضاً أن السائل قد يكون له دعاء يدعو به لنفسه، فيمكن أن يجعل ثُلثَه دعاءً للنبي -صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ- ، ويمكن أن يجعل له شَطْرَه، ويمكن أن يكون جميعُ دعائِه دعاءً للنبي، مثل أن يُصلِّي عليه بدلَ دعائه. وقد ثبتَ أنه: "من صلَّى عليه مرة صلَّى الله عليه عشراً" أخرجه مسلم من حديث أبي هريرة، فيكون أجر صلاته كافياً له، ولهذا قال: "يَكفِيْ همَّك ويَغفِر ذنبَك"، أي: إنك إنما تطلب زوالَ سبب الضرر الذي يُعقِب الهمَّ ويُوجب الذنب، فإذا صليتَ علي بدل دعائك حصل مقصودك، ويحتمل هذا الحديث أن المراد أن يشركه معه في الدعاء، فكأنه قال: كلما دعوت لنفسي صليت عليك، ولا يدل على الاكتفاء بالصلاة عن الدعاء، بل يجمع بينهما عملًا بجميع النصوص.',
-  hints_ar: [
-    "أفضل القيام ما كان في ثلث الليل الأخير.",
-    "فضل الصلاة على النبي –صلى الله عليه وسلم-.",
-    "جواز ذكر الإنسان صالح عمله إذا أمن من العُجب؛ لغرض كالاستفتاء.",
-    "قرب الموت من العباد، ولكن أكثر الناس غافلون عنه.",
+  "hadeeth_intro": "Abu Bakrah (may Allah be pleased with him) reported: The Prophet (may Allah's peace and blessings be upon him) said:",
+  "hadeeth_ar": "عن أبي بكرة رضي الله عنه قال: قال النبي صلى الله عليه وسلم: «‌أَلَا ‌أُنَبِّئُكُمْ بِأَكْبَرِ الْكَبَائِرِ؟» ثَلَاثًا، قَالُوا: بَلَى يَا رَسُولَ اللهِ، قَالَ: «الْإِشْرَاكُ بِاللهِ، وَعُقُوقُ الْوَالِدَيْنِ» وَجَلَسَ وَكَانَ مُتَّكِئًا، فَقَالَ: «أَلَا وَقَوْلُ الزُّورِ»، قَالَ: فَمَا زَالَ يُكَرِّرُهَا حَتَّى قُلْنَا: لَيْتَهُ سَكَتَ.",
+  "hadeeth_intro_ar": "عن أبي بكرة رضي الله عنه قال: قال النبي صلى الله عليه وسلم:",
+  "explanation_ar": "يُخبِرُ النبيُّ صلى الله عليه وسلم أصحابَه عن أعظم الكبائر، فذَكرَ هذه الثلاث:\n\n1. الإشراك بالله: وهو صَرْفُ أيِّ نوعٍ من أنواع العبادة لغير الله، وتسويةُ غيرِ الله بالله في ألوهيته وربوبيته وأسمائه وصفاته. \n\n2. عقوق الوالدين: وهو كلُّ أذى للأبوين، قولًا كان أو فعلًا، وترك الإحسان إليهما. \n\n3. قول الزور ومنه شهادة الزور: وهو كل قول مُزوَّر ومكذوب يراد به انتقاص مَن وقع عليه بأخذ ماله أو الاعتداء على عرضه أو نحو ذلك.\n\nوقد كَرَّر النبيُّ صلى الله عليه وسلم التحذيرَ من قول الزور تنبيهًا على استقباحِه وآثارِه السيئة على المجتمع، حتى قال الصحابة: ليته سكت؛ شَفقةً عليه، وكراهية لِما يُزعجه.",
+  "hints_ar": [
+    "أعظم الذنوب الشركُ بالله؛ لأنه جعلَه صَدْرَ الكبائر وأكبرَها، ويؤكد هذا قوله تعالى {إن الله لا يَغْفِرُ أن يشرَكَ به وَيَغْفِرُ مَا دونَ ذلِكَ لِمَنْ يشَاء}.",
+    "عظم حقوق الوالدين، إذ قَرَنَ حقَّهما بحق الله تعالى.",
+    "الذنوب تنقسم إلى كبائر وصغائر، والكبيرة هي: كلُّ ذنب فيه عقوبة دنيوية، كالحدود واللعن، أو وعيد أُخروي، كالوعيد بدخول النار، وأن الكبائر دركات بعضها أغلظ من بعض في التحريم، وصغائر الذنوب هي ما سوى الكبائر."
   ],
-  words_meanings_ar: [
-    { word: "الراجفة", meaning: " النفخة الأولى." },
-    { word: "الرادفة", meaning: " النفخة الثانية." },
-    { word: "من صلاتي", meaning: " من دعائي." },
-    { word: "تكفى همك", meaning: " المتعلق بالدارين." },
+  "words_meanings_ar": [
+    {
+      "word": "ألا أنبئكم",
+      "meaning": " أَلا أخبركم."
+    }
   ],
-  attribution_ar: "رواه الترمذي وأحمد",
-  grade_ar: "حسن",
+  "attribution_ar": "متفق عليه",
+  "grade_ar": "صحيح"
 };
 
 export default function createHadithContent() {

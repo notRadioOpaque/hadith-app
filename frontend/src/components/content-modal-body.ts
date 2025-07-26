@@ -12,7 +12,7 @@ export default function createContentModalBody(hadith: Hadith) {
   const left = createContentModalLeft(hadeeth, explanation);
   const right = createContentModalRight(hints);
 
-  body.className = "w-full flex flex-1 relative gap-4";
+  body.className = "w-full flex flex-1 relative gap-4 h-full";
 
   render([left, right], body);
 

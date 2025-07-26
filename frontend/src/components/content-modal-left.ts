@@ -9,7 +9,7 @@ export default function createContentModalLeft(hadeeth: string, explanation: str
 
   const renderer = document.createElement("div");
   renderer.className =
-    "border w-full h-full rounded-lg overflow-auto p-15 text-lg font-bold flex flex-col items-center justify-center text-center";
+    "border w-full h-full rounded-lg overflow-auto p-15 text-lg font-bold flex flex-col justify-center text-center";
 
   function updateRenderer() {
 
