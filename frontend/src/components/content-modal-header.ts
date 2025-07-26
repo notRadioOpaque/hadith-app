@@ -10,7 +10,7 @@ export default function createContentModalHeader() {
   const logo = createLogo();
   logoWrapper.appendChild(logo);
 
-  header.className = "w-full h-[60px] flex items-center mb-2 relative border  border-green-500";
+  header.className = "w-full h-[60px] flex items-center mb-6 relative border rounded-2xl";
   logoWrapper.className = "absolute left-[50%] translate-x-[-50%]";
 
   render([backBtn, logoWrapper], header);

@@ -14,7 +14,7 @@ export default function createHadithContentModal() {
   const body = createContentModalBody(hadithSample);
 
   modalContainer.className =
-    "fixed w-full z-10 h-screen hidden bg-[#242124] flex flex-col border px-6 pb-6";
+    "fixed w-full z-10 h-screen hidden bg-[#242124] flex flex-col border p-3";
   modalContainer.id = "contentModal";
 
   render([header,body], modalContainer);

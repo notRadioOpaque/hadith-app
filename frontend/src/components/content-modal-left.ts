@@ -1,29 +1,24 @@
 import render from "../lib/dom";
-import type { Hadith } from "../types";
 
-
-export default function createContentModalLeft(hadeeth: Hadith, explanation: Hadith) {
+export default function createContentModalLeft(hadeeth: string, explanation: string) {
   const left = document.createElement("div");
 
   const hadithDiv = createHadith(hadeeth);
-  const explanationDiv = createExplanation(explanation);
+  const toggleBtn = createToggleBtn();
+  // const explanationDiv = createExplanation(explanation);
 
-  left.className = "flex flex-col w-[56%] border-blue-500 h-full gap-8 border";
+  left.className = "flex flex-col w-[56%] h-full gap-6 items-center";
 
-  render([hadithDiv,explanationDiv], left);
+  render([hadithDiv,toggleBtn], left);
 
   return left;
 }
 
-
-
-
-
 function createHadith(hadeeth: any) {
   const div = document.createElement("div");
   const text = document.createElement("p");
-  
-  div.className = "border w-full h-[45%] rounded-lg overflow-auto p-6";
+
+  div.className = "border w-full h-full rounded-lg overflow-auto p-15 text-lg font-bold flex flex-col items-center justify-center";
   text.innerHTML = hadeeth;
 
   div.appendChild(text);
@@ -32,14 +27,26 @@ function createHadith(hadeeth: any) {
 }
 
 
-function createExplanation(explanation: any) {
-  const div = document.createElement("div");
-  const text = document.createElement("p");
- 
-  div.className = "border w-full h-[55%] rounded-lg overflow-auto p-6";
-  text.innerHTML = explanation;
+function createToggleBtn() {
+  const seeMoreBtn = document.createElement("button");
 
-  div.appendChild(text);
+  seeMoreBtn.className =
+    " bottom-0 px-0 hover:border-b-transparent border-b font-bold text-lg cursor-pointer py-[2px] w-fit";
+  seeMoreBtn.textContent = "Read explanation";
+  // seeMoreBtn.addEventListener("click", seeMore);
 
-  return div;
+  return seeMoreBtn;
 }
+
+
+// function createExplanation(explanation: any) {
+//   const div = document.createElement("div");
+//   const text = document.createElement("p");
+
+//   div.className = "border w-full h-[55%] rounded-lg overflow-auto";
+//   text.innerHTML = explanation;
+
+//   div.appendChild(text);
+
+//   return div;
+// }

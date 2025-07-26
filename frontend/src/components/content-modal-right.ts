@@ -1,7 +1,6 @@
 import render from "../lib/dom";
 
-
-export default function createContentModalRight(hints: any) {
+export default function createContentModalRight(hints: string[] | undefined) {
   const right = document.createElement("div");
 
   const hintDiv = createHint(hints);
@@ -13,8 +12,6 @@ export default function createContentModalRight(hints: any) {
 
   return right;
 }
-
-
 
 function createHint(hints: any) {
   const div = document.createElement("div");
@@ -28,7 +25,6 @@ function createHint(hints: any) {
   return div;
 }
 
-
 function displayCtaBtns() {
   const btnDiv = document.createElement("div");
   const btn1 = createBtn1();
@@ -37,52 +33,43 @@ function displayCtaBtns() {
 
   btnDiv.className = "border w-full h-[35%] flex flex-col items-center justify-center gap-8 p-10 rounded-lg";
 
-  render([btn1,btn2,btn3], btnDiv);
+  render([btn1, btn2, btn3], btnDiv);
 
   return btnDiv;
 }
 
-
-
-
 function createBtn1() {
   const btn = document.createElement("button");
 
-  btn.textContent = "test1"
+  btn.textContent = "test1";
   btn.className =
     "!p-3 w-full !rounded-full hover:ring-[#F0FFF0] hover:ring-2 hover:ring-offset-3 hover:ring-offset-[#242124]  w-full !text-[#242124] !bg-[#F0FFF0] !font-bold !text-lg cursor-pointer";
 
-    btn.addEventListener("click", () => {
+  btn.addEventListener("click", () => {});
 
-    })
-
-    return btn;
+  return btn;
 }
 
 function createBtn2() {
   const btn = document.createElement("button");
 
-  btn.textContent = "test2"
+  btn.textContent = "test2";
   btn.className =
     "!p-3 w-full !rounded-full hover:ring-[#F0FFF0] hover:ring-2 hover:ring-offset-3 hover:ring-offset-[#242124]  w-full !text-[#242124] !bg-[#F0FFF0] !font-bold !text-lg cursor-pointer";
 
-    btn.addEventListener("click", () => {
+  btn.addEventListener("click", () => {});
 
-    })
-
-    return btn;
+  return btn;
 }
 
 function createBtn3() {
   const btn = document.createElement("button");
 
-  btn.textContent = "test3"
+  btn.textContent = "test3";
   btn.className =
     "!p-3 w-full !rounded-full hover:ring-[#F0FFF0] hover:ring-2 hover:ring-offset-3 hover:ring-offset-[#242124]  w-full !text-[#242124] !bg-[#F0FFF0] !font-bold !text-lg cursor-pointer";
 
-    btn.addEventListener("click", () => {
-      
-    })
+  btn.addEventListener("click", () => {});
 
-    return btn;
+  return btn;
 }
