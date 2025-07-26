@@ -76,6 +76,7 @@ export default function createHadithContent() {
   return hadithContent;
 }
 
+
 function createSubscribePanel() {
   const subscribeWrapper = document.createElement("div");
   const subBtn = document.createElement("button");
