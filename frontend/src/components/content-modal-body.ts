@@ -2,7 +2,6 @@ import render from "../lib/dom";
 import createContentModalLeft from "./content-modal-left";
 import createContentModalRight from "./content-modal-right";
 import type { Hadith } from "../types";
-// import { hadithSample } from "./hadith-content";
 
 
 export default function createContentModalBody(hadith: Hadith) {
