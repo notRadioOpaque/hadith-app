@@ -4,7 +4,7 @@ export default function createHadithContentBody(hadith: Hadith) {
   const seeMore = () => {
     const contentModal = document.getElementById("contentModal");
 
-    contentModal?.classList.add("show");
+    contentModal?.classList.add("show-slider");
   };
 
   const hadithContentBody = document.createElement("div");

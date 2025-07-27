@@ -15,15 +15,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #00a357;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #017a42;
-}
-
 body {
   font-family: "PT Sans", sans-serif;
   font-optical-sizing: auto;
@@ -32,6 +23,14 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+a {
+  color: #29a5d4;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 h1 {
@@ -111,6 +110,11 @@ button:focus-visible {
 }
 
 .show {
+  display: flex;
+}
+
+.show-slider {
+  transform: translateY(-100%);
   display: flex;
 }
 

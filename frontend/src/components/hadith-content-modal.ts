@@ -1,9 +1,7 @@
+import { hadithSample } from "../lib/constants";
 import render from "../lib/dom";
 import createContentModalBody from "./content-modal-body";
 import createContentModalHeader from "./content-modal-header";
-import { hadithSample } from "./hadith-content";
-
-
 
 export default function createHadithContentModal() {
   const modalContainer = document.createElement("div");
@@ -11,17 +9,10 @@ export default function createHadithContentModal() {
   const body = createContentModalBody(hadithSample);
 
   modalContainer.className =
-    "fixed w-full z-10 h-screen hidden bg-[#242124] flex flex-col border p-3";
+    "absolute w-full z-10 gap-3 min-h-full transition-all duration-400 ease-in-out h-max flex flex-col translate-y-[100%] bg-[#242124] px-8 pt-3 pb-8";
   modalContainer.id = "contentModal";
 
-  render([header,body], modalContainer);
+  render([header, body], modalContainer);
 
   return modalContainer;
 }
-
-
-
-
-
-
-
