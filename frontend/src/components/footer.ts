@@ -5,12 +5,12 @@ const GITHUB_BASE_URL = "https://api.github.com/users";
 
 export default function createFooter() {
   const footer = document.createElement("footer");
-  const footerLeft = createFooterLeft();
+  // const footerLeft = createFooterLeft();
   const footerRight = createFooterRight();
 
-  footer.className = "flex justify-between w-full mt-auto py-2 text-white";
+  footer.className = "flex justify-between items-center py-2 text-white";
 
-  render([footerLeft, footerRight], footer);
+  render([footerRight], footer);
 
   return footer;
 }
@@ -33,15 +33,15 @@ const fetchGithubProfile = async (url: string) => {
 const bigmuak = await fetchGithubProfile(`${GITHUB_BASE_URL}/Abdulhakeem010`);
 const nro = await fetchGithubProfile(`${GITHUB_BASE_URL}/notradioopaque`);
 
-function createFooterLeft() {
-  const footerLeft = document.createElement("div");
-  const date = new Date().getFullYear();
-
-  footerLeft.textContent = `Copyright \u00A9 Hadith App ${date} All Right Reserved`;
-  footerLeft.className = "text-sm text-white/60";
-
-  return footerLeft;
-}
+// function createFooterLeft() {
+//   const footerLeft = document.createElement("div");
+//   const date = new Date().getFullYear();
+//
+//   footerLeft.textContent = `Copyright \u00A9 Hadith App ${date} All Right Reserved`;
+//   footerLeft.className = "text-sm text-white/60";
+//
+//   return footerLeft;
+// }
 
 function createFooterRight() {
   const footerRight = document.createElement("div");
@@ -63,9 +63,9 @@ function createFooterRight() {
   });
 
   footerRight.append(
-    "Built with vanilla ",
+    "Built with ",
     typescriptLink,
-    ", and maintained by ",
+    " by ",
     nroLink,
     " & ",
     muakLink,

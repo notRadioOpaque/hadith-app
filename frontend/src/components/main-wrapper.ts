@@ -13,7 +13,8 @@ export default function createMain() {
   const subscribeModal = createSubscribeModal();
   const contentModal = createHadithContentModal();
 
-  main.className = "flex flex-1 bg-[#242124] text-[#F0FFF0] relative z-10";
+  main.className =
+    "flex bg-[#242124] text-[#F0FFF0] relative z-10 overflow-hidden";
 
   render([mainLeftDiv, mainRightDiv, subscribeModal, contentModal], main);
 

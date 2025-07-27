@@ -1,19 +1,12 @@
-import { arrow_left } from "../assets/icons";
+import { up_arrow } from "../assets/icons";
 import render from "../lib/dom";
-import createLogo from "./logo";
 
 export default function createContentModalHeader() {
   const header = document.createElement("div");
-  const backBtn = createCloseButton();
-  const logoWrapper = document.createElement("div");
+  const closeBtn = createCloseButton();
+  header.className = "w-full flex items-center justify-center";
 
-  const logo = createLogo();
-  logoWrapper.appendChild(logo);
-
-  header.className = "w-full h-[60px] flex items-center mb-6 relative border rounded-2xl";
-  logoWrapper.className = "absolute left-[50%] translate-x-[-50%]";
-
-  render([backBtn, logoWrapper], header);
+  render([closeBtn], header);
 
   return header;
 }
@@ -21,15 +14,15 @@ export default function createContentModalHeader() {
 function createCloseButton() {
   const closeButton = document.createElement("button");
   const btnIcon = document.createElement("img");
+  btnIcon.src = up_arrow;
 
-  btnIcon.src = arrow_left;
-  btnIcon.className = "w-[35px] h-[35px] block";
+  closeButton.className = "px-8 rounded-full bg-white/10";
 
-  closeButton.className =
-    "flex !bg-transparent !border-none hover:!border-none mt-0 relative cursor-pointer transform  transition hover:-translate-x-2 absolute right-1n";
+  btnIcon.className =
+    "w-[30px] h-[30px] block rotate-180 hover:scale-105 transition-all ease-in-out ";
 
   closeButton.addEventListener("click", () => {
-    closeButton.closest(".show")?.classList.remove("show");
+    closeButton.closest(".show-slider")?.classList.remove("show-slider");
   });
 
   closeButton.appendChild(btnIcon);
