@@ -10,7 +10,8 @@
     "print:subs": "ts-node scripts/print-subscribers.ts",
     "print:hadiths": "ts-node scripts/print-hadiths.ts",
     "generate:ids": "ts-node scripts/generateIdArray.ts",
-    "test:fetch-hadith": "ts-node scripts/test-fetch-daily-hadith.ts"
+    "test:fetch-hadith": "ts-node scripts/test-fetch-daily-hadith.ts",
+    "fetch:image": "ts-node src/utils/fetch-random-image.ts"
   },
   "keywords": [],
   "author": "",
