@@ -28,11 +28,11 @@ fetchRandomMosqueImage();
 
 function getHighQualityImageUrl(baseUrl: string): string {
   const params = new URLSearchParams({
-    w: "1920", // HD width
-    dpr: "2", // Retina pixel density
-    q: "100", // Max image quality
-    fm: "jpg", // Force format to JPEG (fast & high quality)
-    fit: "max", // Preserve aspect ratio
+    w: "1920",
+    dpr: "2",
+    q: "100",
+    fm: "jpg",
+    fit: "max",
   });
 
   return `${baseUrl}&${params.toString()}`;
