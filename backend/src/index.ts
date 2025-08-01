@@ -1,5 +1,6 @@
-import "./scheduler";
+import "./lib/scheduler";
 import express from "express";
+import "dotenv/config";
 
 const subscribeRoute = require("./routes/subscribe");
 const getDailyHadithRoute = require("./routes/get-daily-hadith");
@@ -13,7 +14,7 @@ app.use(
     origin: "http://localhost:5173",
     method: ["POST"],
     credentials: false,
-  }),
+  })
 );
 
 app.use(express.json());
