@@ -5,10 +5,10 @@ import createRightSection from "./main-right-section";
 import createSubscribeModal from "./subscribe-modal";
 import createHadithContentModal from "./hadith-content-modal";
 
-export default function createMain() {
+export default async function createMain() {
   const main = document.createElement("main");
   const mainLeftDiv = createLeftSection();
-  const mainRightDiv = createRightSection();
+  const mainRightDiv = await createRightSection();
   // const leftSlider = createLeftSlider();
   const subscribeModal = createSubscribeModal();
   const contentModal = createHadithContentModal();
