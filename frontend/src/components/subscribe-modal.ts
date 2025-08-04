@@ -7,7 +7,7 @@ export default function createSubscribeModal() {
   const underlay = createUnderlay();
   const content = createContent();
 
-  modalContainer.className = "absolute w-full z-10 h-full hidden flex items-center justify-center";
+  modalContainer.className = "absolute w-full z-100 h-full hidden flex items-center justify-center";
   modalContainer.id = "modal";
 
   render([underlay, content], modalContainer);
@@ -62,7 +62,7 @@ function createCloseButton() {
   btnIcon.src = close_icon;
   btnIcon.className = "w-[40px] h-[40px] block";
 
-  closeButton.className = "flex !bg-transparent !border-none hover:!border-none mt-0 relative";
+  closeButton.className = "flex !bg-transparent !border-none hover:!border-none mt-0 relative cursor-pointer";
 
   closeButton.addEventListener("click", () => {
     closeButton.closest(".show")?.classList.remove("show");

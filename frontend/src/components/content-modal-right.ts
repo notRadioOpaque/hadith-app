@@ -63,8 +63,14 @@ function displayCtaBtns() {
   return btnDiv;
 }
 
+
 function createBtn1() {
   const btn = document.createElement("button");
+
+  btn.addEventListener("click", () => {
+    const modal = document.querySelector("#modal");
+    modal?.classList.add("show");
+  })
 
   btn.textContent = "Get daily Hadith";
   btn.className =
