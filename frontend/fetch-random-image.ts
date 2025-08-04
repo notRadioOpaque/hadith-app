@@ -1,6 +1,6 @@
 import "dotenv/config";
 
-const accessKey = process.env.UNSPLASH_API_KEY;
+const accessKey = "BLq7mIX4woI5jEfUTl0dATesW3yJ0HIYJag7P3v4YbM";
 
 if (!accessKey) {
   throw new Error("UNSPLASH_API_KEY is not set");

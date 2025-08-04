@@ -4,5 +4,7 @@ import "./styles/style.css";
 const root = document.getElementById("app");
 
 if (root) {
-  createApp(root);
+  (async () => {
+    await createApp(root); // ✅ properly await the async setup
+  })();
 }
