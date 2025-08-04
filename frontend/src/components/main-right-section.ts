@@ -1,4 +1,4 @@
-import { image3 } from "../assets/images";
+import { image4 } from "../assets/images";
 import render from "../lib/dom";
 import createRightBottomPanel from "./right-bottom-panel";
 
@@ -27,7 +27,7 @@ async function createImageRender() {
     console.error("⚠️ Falling back to local image", err);
   }
 
-  image.src = fetchedImageUrl || image3;
+  image.src = fetchedImageUrl || image4;
   imageWrapper.className = "w-full h-[93%] rounded-bl-[25px] overflow-hidden";
   image.className = "block w-full h-full object-cover";
 
@@ -37,10 +37,10 @@ async function createImageRender() {
 }
 
 async function fetchRandomMosqueImage(): Promise<{ url: string } | undefined> {
-  const accessKey = process.env.UNSPLASH_API_KEY || "";
+  const accessKey = import.meta.env.VITE_UNSPLASH_API_KEY || "";
 
   if (!accessKey) {
-    throw new Error("UNSPLASH_API_KEY is not set");
+    throw new Error("VITE_UNSPLASH_API_KEY is not set");
   }
 
   const url = `https://api.unsplash.com/photos/random?query=mosque&orientation=landscape&client_id=${accessKey}`;
