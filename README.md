@@ -1,16 +1,17 @@
-# 🕌 Hadith & Reflections  
+# 🕌 Hadith App  
 
-A modern web application that displays **daily Hadiths** alongside beautiful mosque imagery.  
-Built with **TypeScript**, **Vite**, and **TailwindCSS**, this app is designed to provide both knowledge and inspiration in a calming interface.  
+A modern **TypeScript** + **Vite web app** that serves daily Hadiths, contextual explanations, and mosque images. Includes an opt-in email delivery system to send daily Hadiths to subscribers’ inboxes. Easy to extend and integrate with your preferred email provider.
 
 ---
 
 ## ✨ Features  
-- 📖 Display Hadith with hints and explanations.  
-- 🖼️ High-quality mosque images displayed with each Hadith.  
-- 🎨 Clean and responsive UI using TailwindCSS.  
-- ⚡ Fast and lightweight — powered by Vite.  
-- 🔑 Environment variable support for API keys.  
+- **📖 Daily Hadith Delivery** – Authentic Hadiths presented every day with hints and concise explanations.
+- **🖼️ Inspiring Visuals** – High-quality mosque images paired with each Hadith to create a calming experience.
+- **✉️ Email Subscription** – Subscribe to receive the daily Hadith directly in your inbox.
+- **🎨 Modern Responsive UI** – Clean, elegant design built with TailwindCSS, optimized for all devices.
+- **⚡ Lightning-Fast Performance** – Powered by Vite for instant builds and smooth rendering.
+- **🔒 Secure Configuration** – API keys and environment variables handled safely.
+- **🔧 Extensible & Maintainable** – Structured with TypeScript for scalability and reliability. 
 
 ---
 
