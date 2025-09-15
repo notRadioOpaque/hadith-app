@@ -16,10 +16,10 @@ function createCloseButton() {
   const btnIcon = document.createElement("img");
   btnIcon.src = up_arrow;
 
-  closeButton.className = "px-8 rounded-full bg-white/10";
+  closeButton.className = "px-8 rounded-full bg-white/10 cursor-pointer group";
 
   btnIcon.className =
-    "w-[30px] h-[30px] block rotate-180 hover:scale-105 transition-all ease-in-out ";
+    "w-[30px] h-[30px] block rotate-180 group-hover:scale-105 transition-all ease-in-out";
 
   closeButton.addEventListener("click", () => {
     closeButton.closest(".show-slider")?.classList.remove("show-slider");

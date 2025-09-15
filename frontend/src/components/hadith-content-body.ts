@@ -11,7 +11,7 @@ export default function createHadithContentBody(hadith: Hadith) {
   const seeMoreBtn = document.createElement("button");
 
   seeMoreBtn.className =
-    " bottom-0 !px-0 mb-2 hover:border-b-transparent border-b text-base !py-[2px]  mt-5";
+    " bottom-0 !px-0 mb-2 hover:border-b-transparent border-b text-base !py-[2px]  mt-5 cursor-pointer";
   seeMoreBtn.textContent = "Read more";
   seeMoreBtn.addEventListener("click", seeMore);
 

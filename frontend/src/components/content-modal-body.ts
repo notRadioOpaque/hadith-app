@@ -11,7 +11,7 @@ export default function createContentModalBody(hadith: Hadith) {
   const left = createContentModalLeft(hadeeth, explanation);
   const right = createContentModalRight(hints);
 
-  body.className = "w-full border p-4 flex-1 flex gap-4 min-h-full ";
+  body.className = "w-full border p-4 flex-1 flex gap-4 min-h-full";
 
   render([left, right], body);
 
